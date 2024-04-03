@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --preto: #1E1E1E;
+  --vermelho: #BA0403;
+  --vinho: #940000;
+  --vinhoEscuro: #710012;
+  --azulMarinho: #1d1A55;
+  --cinza: #797979;
+  --branco: #EBEBEB;
+}
+
+.carousel-inner img{
+  width: 100%;
+  height: 40%;
+}
+
+/*Estutura do site*/
+/*cor da página*/
+body {
+  background-color:#f4f4f4;
+  text-align: center;
+  font-size: 16pt;
+  font-family: "Open Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  height: 100vh;
+}
+.navbar-nav{
+  margin: 0px 35%;
+}
+
+.bg-dark {
+  background-color: var(--vinhoEscuro) !important;
+}
+.dropdown-item:hover {
+  color: black !important; /* Use !important se necessário para garantir que a regra seja aplicada */
+}
+.dropdown-item:active{
+  background-color:white !important;
+}
+.btn_precisaAjuda{
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: var(--azulMarinho);
+  color: var(--branco);
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+/* Carrosel */
+
+.transparence {
+  opacity: 0.; /* Defina a opacidade desejada (0.0 a 1.0) */
+}
+
+.nav-item .nav-link:hover{
+  border-bottom: 3px solid #1D1A55 !important;
+}
+.imagem-online{
+  width: 10%;
+  margin-right: 20px;
+  margin-left: 200px;
+  height: 50px;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+  main{
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  }
+  
+  main h1{
+    font-weight: bold;
+    font-size: 32pt !important;
+    padding: 2%;
+  }
+  main h2{
+    font-weight: bold;
+    font-size: 32pt !important;
+  }
+  main h3{
+    padding: 2%;
+  }
+  main p{
+    margin: 0 10%;
+    text-align: justify;
+    font-size: 16pt;
+  }
+  .container{
+    width: 100%;
+    padding-top: 5%;
+    height: 50%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .container-form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: solid #1E1E1E 1px;
+    border-radius: 10px;
+  }
+  button{
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1D1A55;
+    color: white;
+    font-weight: bold;
+  }
+  button:hover{
+    opacity: 0.9;
+  }
+  .btn_help{
+  position: fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+  }
+  .container-form h2{
+    text-align: center;
+    font-weight: bold;
+  }
+  form {
+    margin-top: 20px;
+  }
+  label{
+    width: 100%;
+    font-weight: bold;
+  }
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.rodape {
+  background-color: #710012;
+  padding-right: 7%;
+}
+
+
+.informationFooter-rodape{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif !important;
+  color: white;
+}
+
+.telefones,
+.mail {
+  color: white;
+  text-decoration: none;
+  font-size: 14pt;
+}
+
+.telefones:hover,
+.mail:hover {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+.logos1,
+.logos2,
+.logos3,
+.logos4 {
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+
+.btn_whats{
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #FFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+}
+.fa-brands.fa-whatsapp{
+  font-size: 200%;
+}
+.btn_help{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+}
+
+.btn_precisaAjuda {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: #1D1A55 ;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
+  @media (max-width: 768px) {
+    
+    .imageHeader {
+      height: 200px;
+      
+    }
+    
+    .tituloPrincipal {
+      font-size: 2.5em;
+      margin-top: 15%;
+    }
+    
+    .iconesEmpresarial a {
+      font-size: 1.2em;
+    }
+    
+    .areasAtuacao {
+      margin-top: 15%;
+    }
+    
+    .conteudoAreaAtuacao {
+      margin-top: 30%;
+      font-size: 110%;
+    }
+    
+    .rodape {
+      line-height: 200%;
+    }
+    
+    .informationFooter {
+      font-size: 1.2em;
+    }
+    
+    .telefones,
+    .mail {
+      font-size: 1em;
+    }
+    
+    .logos1,
+    .logos2,
+    .logos3,
+    .logos4 {
+      font-size: 1.2em;
+    }
+    
+    
+    .btn_precisaAjuda {
+      width: 100px;
+      height: 50px; /*adição de uma altura*/
+      bottom: 40px;
+      transform: translateX(-50%);
+      left:40px;
+      display: none;
+    }
+
+    .btn_help{
+      display: inline-block;
+    }
+
+    /*familia e sucessoes*/
+    .tituloPrincipal.familia {
+      font-size: 24px;
+      line-height: 1.2;
+      text-align: center; 
+    }
+  }
+
+@media (max-width: 768px) {
+
+
+  .tituloPrincipal.familia {
+    font-size: 30px; 
+    line-height: 1.2;
+    text-align: center;
+
+  }
+  .tituloPrincipal {
+    font-size: 2.5em;
+    margin-top: 5%;
+  }
+  .areasAtuacao {
+    margin-top: 15%;
+  }
+  footer{
+    height:auto;
+    background-color: #710012;
+    font-size: 10pt;
+    margin-top: 50px;
+  }
+  .rodape{
+    font-size: 10pt;
+    color: white;
+  }
+  .informationFooter-rodape{
+    padding-top: 50px;
+  }
+  .telefones rodape, .mail, .telefones{
+    font-size: 10pt;
+  }
+  #footer_copyright{
+    background-color: #f4f4f4;
+    height: 20px;
+    margin-top: 20px;
+  }
+  
+  .btn_whats{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+  }
+  .fa-brands.fa-whatsapp{
+    font-size: 200%;
+  }
+  .btn_help{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    left:40px;
+    background-color:#1D1A55;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+    display: none;
+  }
+  
+  .btn_precisaAjuda {
+    position: fixed;
+    width: 200px;
+    padding: 10px;
+    top: 20px;
+    right: 40px;
+    background-color: #1D1A55 ;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+    
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .areasAtuacao {
+    margin-top: 15%;
+  }
+  footer{
+    height:auto;
+    background-color: #710012;
+    font-size: 14pt;
+    margin-top: 50px;
+  }
+  .rodape{
+    font-size: 14pt;
+    color: white;
+  }
+  .informationFooter-rodape{
+    padding-top: 50px;
+  }
+  .telefones rodape, .mail, .telefones{
+    font-size: 12pt;
+  }
+  #footer_copyright{
+    background-color: #f4f4f4;
+    height: 20px;
+    margin-top: 20px;
+  }
+  
+  .btn_whats{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+  }
+  .fa-brands.fa-whatsapp{
+    font-size: 200%;
+  }
+  .btn_help{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    left:40px;
+    background-color:#1D1A55;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+    display: none;
+  }
+  
+  .btn_precisaAjuda {
+    position: fixed;
+    width: 200px;
+    padding: 10px;
+    top: 20px;
+    right: 40px;
+    background-color: #1D1A55 ;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px){
+  .areasAtuacao {
+    margin-top: 15%;
+  }
+  footer{
+    height:auto;
+    background-color: #710012;
+    font-size: 14pt;
+    margin-top: 50px;
+  }
+  .rodape{
+    font-size: 16pt;
+    color: white;
+  }
+  .informationFooter-rodape{
+    padding-top: 50px;
+  }
+  .telefones rodape, .mail, .telefones{
+    font-size: 14pt;
+  }
+  #footer_copyright{
+    background-color: #f4f4f4;
+    height: 20px;
+    margin-top: 20px;
+  }
+  
+  .btn_whats{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+  }
+  .fa-brands.fa-whatsapp{
+    font-size: 200%;
+  }
+  .btn_help{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    left:40px;
+    background-color:#1D1A55;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+    display: none;
+  }
+  
+  .btn_precisaAjuda {
+    position: fixed;
+    width: 200px;
+    padding: 10px;
+    top: 20px;
+    right: 40px;
+    background-color: #1D1A55 ;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 769px) and (max-width: 1180px) {
+  main{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    }
+    
+    main h1{
+      font-weight: bold;
+      font-size: 32pt !important;
+      padding: 2%;
+    }
+    main h2{
+      font-weight: bold;
+      font-size: 32pt !important;
+    }
+    main h3{
+      padding: 2%;
+    }
+    main p{
+      margin: 0 10%;
+      text-align: justify;
+      font-size: 16pt;
+    }
+    .container{
+      width: 100%;
+      padding-top: 5%;
+      height: 50%;
+      padding-bottom: 2%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .container-form{
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border: solid #1E1E1E 1px;
+      border-radius: 10px;
+    }
+    button{
+      width: 30%;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #1D1A55;
+      color: white;
+      font-weight: bold;
+    }
+    button:hover{
+      opacity: 0.9;
+    }
+    .btn_help{
+    position: fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    left:40px;
+    background-color:#1D1A55;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+    display: none;
+    }
+    .container-form h2{
+      text-align: center;
+      font-weight: bold;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label{
+      width: 100%;
+      font-weight: bold;
+    }
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  .areasAtuacao {
+    margin-top: 15%;
+  }
+  footer{
+    height:auto;
+    background-color: #710012;
+    font-size: 14pt;
+    margin-top: 50px;
+  }
+  .rodape{
+    font-size: 14pt;
+    color: white;
+  }
+  .informationFooter-rodape{
+    padding-top: 50px;
+  }
+  .telefones rodape, .mail, .telefones{
+    font-size: 12pt;
+  }
+  #footer_copyright{
+    background-color: #f4f4f4;
+    height: 20px;
+    margin-top: 20px;
+  }
+  
+  .btn_whats{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+  }
+  .fa-brands.fa-whatsapp{
+    font-size: 200%;
+  }
+  .btn_help{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    left:40px;
+    background-color:#1D1A55;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+    display: none;
+  }
+  
+  .btn_precisaAjuda {
+    position: fixed;
+    width: 200px;
+    padding: 10px;
+    top: 20px;
+    right: 40px;
+    background-color: #1D1A55 ;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+    
+}
+
+
+
