@@ -1,0 +1,1669 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --preto: #1E1E1E;
+  --vermelho: #BA0403;
+  --vinho: #940000;
+  --vinhoEscuro: #710012;
+  --azulMarinho: #1d1A55;
+  --cinza: #797979;
+  --branco: #EBEBEB;
+}
+
+.carousel-inner img{
+  width: 100%;
+  height: 40%;
+}
+
+/*Estutura do site*/
+/*cor da página*/
+body {
+  background-color:var(--branco);
+  text-align: center;
+  font-size: 16pt;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  height: 100vh;
+}
+.navbar-nav{
+  margin: 0px 25%;
+}
+
+.bg-dark {
+  background-color: var(--vinhoEscuro) !important;
+}
+.btn_precisaAjuda{
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: var(--azulMarinho);
+  color: var(--branco);
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+/* Carrosel */
+
+.transparence {
+  opacity: 0.; /* Defina a opacidade desejada (0.0 a 1.0) */
+}
+
+.nav-item .nav-link:hover{
+  border-bottom: 3px solid #1D1A55 !important;
+}
+.carousel-indicators{
+  list-style: none;
+}
+.carousel-container {
+  position: relative;
+}
+.dropdown-item:hover{
+  color: black !important; /* Use !important se necessário para garantir que a regra seja aplicada */
+}
+.dropdown-item:active{
+  background-color:white !important;
+}
+.quemSomos {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-color: var(--branco);
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.quemSomos h1 {
+  font-weight: bold;
+  font-size: 32pt !important;
+}
+
+.quemSomos h2 {
+  font-size: 14pt;
+}
+
+.quemSomos p {
+  text-align: justify;
+  font-size: 20pt;
+}
+
+.container-item-diferente{
+  width: 50%;
+  margin: 3%;
+}
+.container-item {
+  width: 50%;
+  height: 90vh;
+  flex: 1;
+}
+.container-item img {
+  width: 62%; /* Alterado para ocupar 100% do container */
+  height: 100%; /* Alterado para ocupar 100% do container */
+  border-radius: 3px;
+  /* Adiciona object-fit para manter a proporção e cobrir totalmente o container */
+}
+.container-imagem-sobre {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  margin-top: 5%;
+}
+.container-imagem-sobre img {
+  width: 50%;
+  position: absolute;
+  top: 50px;
+}
+
+
+.container-sections{
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.titulo{
+  color: #1D1A55;
+  width: 23%;
+  text-align: left !important;
+  margin-left: 10%;
+  font-size: 32pt;
+  padding: 20px;
+  margin-top: 9%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-icon {
+  color: var(--azulMarinho);
+  font-size: 4em !important;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  font-size: 4em;
+}
+.content-icon:hover{
+  transform: scale(1.1);
+  color: var(--vinhoEscuro)
+}
+
+.container{
+  display: flex;
+  height: 50%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+.areaAtuacao{
+  margin-bottom: 3%;
+}
+
+.areaAtuacao a {
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.areaAtuacao p{
+  margin-top: 13%;
+  font-size: 16pt;
+}
+
+.lineAreaAtuacao {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.container-localizacao{
+  background: url(./fundo/balanca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #fff;
+  height: auto; 
+}
+
+.container-localizacao h2{
+  margin-left: 10%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 28pt;
+}
+.container-localizacao p{
+  text-align: justify;
+  font-size: 20pt;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18pt;
+}
+.container-mapa-direita{
+  margin-right: 15%;
+  width: 150%;
+  height: 80%;
+}
+
+#map{
+  width: 130%;
+  height: 60vh;
+}
+.container-imagem-sobre3{
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 0;
+  display: flex;
+  position: relative;
+}
+.container-imagem3{
+  position: absolute;
+  top: -200px;
+  left: 0;
+}
+.container-imagem3 img{
+  width: 100%;
+  height: 200px;
+}
+
+.container-localizacaoOnline{
+  background-color: #f4f4f4;
+  width: 100%;
+  height: auto;
+  color: var(--azulMarinho);
+  display: block;
+  justify-content: space-around;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.container-localizacaoOnline h2{
+  margin-left: 10%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 28pt;
+}
+.container-localizacaoOnline p{
+  font-size: 12pt;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18pt;
+  color: black;
+}
+.container-caixa-direita{
+  width: 68%;
+  display: inline-block;
+  background-color: rgba(29, 26, 85, 0.9);
+  margin-top: 20px;
+  padding-top: 15px;
+  border-radius: 20px;
+  position: relative;
+}
+.imagem-online{
+  width: 96px;
+  margin-right: 200px;
+  height: 50px;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.areaAtuacao2{
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.areaAtuacao2 a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20pt;
+  margin-left: 5%;
+}
+.areaAtuacao2 p{
+  color: white;
+}
+
+.rodape {
+  padding: 2%;
+  background-color: #710012;
+}
+
+.informationFooter-rodape{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif !important;
+  color: white;
+}
+
+.telefones,
+.mail {
+  color: white;
+  text-decoration: none;
+  font-size: 16pt;
+}
+
+.telefones:hover,
+.mail:hover {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+.logos1,
+.logos2,
+.logos3,
+.logos4 {
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+
+.btn_whats{
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #FFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+}
+.fa-brands.fa-whatsapp{
+  font-size: 200%;
+}
+.btn_help{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+}
+
+.btn_precisaAjuda {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: #1D1A55 ;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
+@media (min-width: 190px) and (max-width: 320px){
+
+  .container-item{
+    margin: 0;
+  }
+  .container-item-diferente{
+    width: 80%;
+  }
+  .container-item img{
+    width: 80%;
+    height: 100%;
+  }
+  .container-localizacaoOnline{
+    width: 100%;
+    height: 200vh;
+    padding-top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+  .container-mapa-direita{
+    margin: 10%;
+    width: 100% ;
+    height: 80%;
+  }
+  #map{
+    width: 80%;
+  }
+  .container-imagem-sobre3{
+   display: none;
+  }
+  .container-localizacaoOnline{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  
+  .container-localizacaoOnline h2{
+    margin-left: 8%;
+    margin-right: 11%;
+    text-align: justify;
+    font-weight: bold;
+    padding-top: 300px;
+    padding-bottom: 20px;
+    font-size: 14pt;
+    text-align: center;
+  }
+  .container-localizacaoOnline p{
+    font-size: 12pt;
+    text-align: justify;
+    color: black;
+  }
+  .container-caixa-direita {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 26, 85, 1);
+  }
+  .container-caixa-direita img{
+    display: none;
+  }
+ 
+  .areaAtuacao2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12pt;
+    color: rgb(253, 253, 253);
+    text-shadow: 5px 7px 5px rgba(255, 254, 254, 0.3);
+  }
+  
+  .areaAtuacao2 p{
+    font-size: 10pt;
+    padding-left: 20px;
+    margin: 0;
+    margin-top: 20px;
+    letter-spacing: -0.1em;
+    color: white;
+    font-weight: 400;
+  }
+  footer{
+    height:auto;
+    background-color: #710012;
+    font-size: 10pt;
+    margin-top: 50px;
+  }
+  .rodape{
+    font-size: 10pt;
+    color: white;
+  }
+  .informationFooter-rodape{
+    padding-top: 50px;
+  }
+  .telefones rodape, .mail, .telefones{
+    font-size: 10pt;
+  }
+  #footer_copyright{
+    background-color: #f4f4f4;
+    height: 20px;
+    margin-top: 20px;
+  }
+  
+  .btn_whats{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+  }
+  .fa-brands.fa-whatsapp{
+    font-size: 200%;
+  }
+  .btn_help{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    left:40px;
+    background-color:#1D1A55;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+    display: none;
+  }
+  
+  .btn_precisaAjuda {
+    position: fixed;
+    width: 200px;
+    padding: 10px;
+    top: 20px;
+    right: 40px;
+    background-color: #1D1A55 ;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  
+ 
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .container-item{
+    margin: 0;
+    margin: 3%;
+  }
+  .container-imagem-sobre{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+  }
+  .container-imagem-sobre img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+  }
+  .carousel-caption {
+    display: none;
+}
+  .navbar-nav {
+    margin: 0; /* Removendo margem para melhorar espaço em telas menores */
+  }
+
+  .btn_precisaAjuda {
+    display: none; /* Ocultando o botão de ajuda em telas menores */
+  }
+
+  .carousel-inner img {
+    height: 60%; /* Ajustando altura da imagem no carrossel */
+  }
+
+  .quemSomos {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Alterando para layout de coluna em telas menores */
+    align-items: center;
+    height: auto; /* Ajustando altura conforme o conteúdo */
+    margin: 0;
+ 
+  }
+
+  .quemSomos h1 {
+    font-size: 24pt !important; /* Reduzindo o tamanho do título em telas menores */
+  }
+
+  .quemSomos h2 {
+    font-size: 12pt; /* Reduzindo o tamanho do subtítulo em telas menores */
+  }
+
+  .quemSomos p {
+    width: 100%;
+    font-size: 12pt; /* Reduzindo o tamanho do texto em telas menores */
+  }
+
+  .container-imagem-sobre {
+    display: none;
+  }
+
+  .container-imagem-sobre2{
+    display: none;
+  }
+  .container-imagem-sobre img{
+  width: 50%;
+  position: absolute;
+  top: 50px;
+}
+
+.container-sections{
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.areaAtuacao{
+  width: 100%;
+  align-items: center; /* Centraliza os itens na coluna */
+  text-align: center; /* Centraliza o texto */
+}
+.titulo {
+  width: 100%;
+  margin-left: 16px;
+  font-size: 24px; /* Reduz o tamanho do título */
+  text-align: center !important;
+  margin-bottom: 1.5em;
+}
+.content-icon{
+  width: 100%;
+  font-size: 40pt !important;
+  margin-bottom: 20px;
+}
+.areaAtuacao p {
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 12pt;
+  margin-top: 10% !important;
+}
+.container-localizacao{
+  width: 100%;
+  background: url(./fundo/balanca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #fff;
+}
+
+.container-localizacao h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+.container-localizacao p{
+  width: 75%;
+  font-size: 12pt;
+  text-align: justify;
+  color: white;
+}
+.container-mapa-direita{
+  margin: 10%;
+  width: 75% ;
+  height: 80%;
+}
+#map{
+  width: 80%;
+}
+.container-imagem-sobre3{
+ display: none;
+}
+
+.container-localizacaoOnline{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.container-localizacaoOnline h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+.container-localizacaoOnline p{
+  width: 75%;
+  font-size: 12pt;
+  text-align: justify;
+  color: black;
+}
+.container-caixa-direita {
+  left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding-top: 35px;
+
+  background-color: rgba(29, 26, 85, 1);
+  border: none;
+}
+.container-caixa-direita img{
+  display: none;
+}
+.areaAtuacao2{
+  height: 10%;
+  text-align: center;
+  display: flex;
+
+}
+.areaAtuacao2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14pt;
+  color: rgb(253, 253, 253);
+  text-shadow: 5px 7px 5px rgba(255, 254, 254, 0.3);
+}
+
+.areaAtuacao2 p{
+  font-size: 10pt;
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 20px;
+  color: white;
+  font-weight: 400;
+}
+footer{
+  height:auto;
+  background-color: #710012;
+  font-size: 10pt;
+  margin-top: 50px;
+}
+.rodape{
+  font-size: 10pt;
+  color: white;
+}
+.informationFooter-rodape{
+  padding-top: 50px;
+}
+.telefones rodape, .mail, .telefones{
+  font-size: 10pt;
+}
+#footer_copyright{
+  background-color: #f4f4f4;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.btn_whats{
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #FFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+}
+.fa-brands.fa-whatsapp{
+  font-size: 200%;
+}
+.btn_help{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+}
+
+.btn_precisaAjuda {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: #1D1A55 ;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+  
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .container-item{
+    margin: 0;
+    margin: 3%;
+  }
+  .container-imagem-sobre{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+  }
+  .container-imagem-sobre img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+  }
+  .carousel-caption {
+    display: none;
+}
+  .navbar-nav {
+    margin: 0; /* Removendo margem para melhorar espaço em telas menores */
+  }
+  .btn_precisaAjuda {
+    display: none; /* Ocultando o botão de ajuda em telas menores */
+  }
+
+  .carousel-inner img {
+    height: 60%; /* Ajustando altura da imagem no carrossel */
+  }
+
+  .quemSomos {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Alterando para layout de coluna em telas menores */
+    align-items: center;
+    height: auto; /* Ajustando altura conforme o conteúdo */
+ 
+  }
+
+  .quemSomos h1 {
+    font-size: 24pt !important; /* Reduzindo o tamanho do título em telas menores */
+  }
+
+  .quemSomos h2 {
+    font-size: 12pt; /* Reduzindo o tamanho do subtítulo em telas menores */
+  }
+
+  .quemSomos p {
+    width: 100%;
+    margin-right: 16px;
+    font-size: 12pt; /* Reduzindo o tamanho do texto em telas menores */
+  }
+
+  .container-imagem-sobre {
+    display: none;
+  }
+
+  .container-imagem-sobre2{
+    display: none;
+  }
+  .container-imagem-sobre img{
+  width: 50%;
+  position: absolute;
+  top: 50px;
+}
+
+.container-sections{
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.areaAtuacao{
+  width: 100%;
+  align-items: center; /* Centraliza os itens na coluna */
+  text-align: center; /* Centraliza o texto */
+}
+.titulo {
+  width: 100%;
+  margin-left: 16px;
+  font-size: 24px; /* Reduz o tamanho do título */
+  text-align: center !important;
+  margin-bottom: 1.5em;
+}
+.content-icon{
+  width: 100%;
+  font-size: 40pt !important;
+  margin-bottom: 20px;
+}
+.areaAtuacao p {
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 12pt;
+  margin-top: 7% !important;
+}
+.container-localizacao{
+  width: 100%;
+  background: url(./fundo/balanca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #fff;
+}
+
+.container-localizacao h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+.container-localizacao p{
+  width: 80%;
+  font-size: 12pt;
+  text-align: justify;
+  color: white;
+}
+.container-mapa-direita{
+  margin: 10%;
+  width: 75% ;
+  height: 80%;
+}
+#map{
+  width: 80%;
+}
+.container-imagem-sobre3{
+ display: none;
+}
+
+.container-localizacaoOnline{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto; 
+}
+
+.container-localizacaoOnline h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+.container-localizacaoOnline p{
+  width: 75%;
+  font-size: 12pt;
+  text-align: justify;
+  color: black;
+}
+
+.container-caixa-direita {
+  left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  padding-top: 35px;
+
+  background-color: rgba(29, 26, 85, 1);
+  border: none;
+}
+.container-caixa-direita img{
+  display: none;
+}
+.areaAtuacao2{
+  height: 10%;
+  text-align: center;
+  display: flex;
+
+}
+.areaAtuacao2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14pt;
+  color: rgb(253, 253, 253);
+  text-shadow: 5px 7px 5px rgba(255, 254, 254, 0.3);
+}
+
+.areaAtuacao2 p{
+  font-size: 10pt;
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 20px;
+  color: white;
+  font-weight: 400;
+}
+footer{
+  height:auto;
+  background-color: #710012;
+  font-size: 14pt;
+  margin-top: 50px;
+}
+.rodape{
+  font-size: 14pt;
+  color: white;
+}
+.informationFooter-rodape{
+  padding-top: 50px;
+}
+.telefones rodape, .mail, .telefones{
+  font-size: 12pt;
+}
+#footer_copyright{
+  background-color: #f4f4f4;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.btn_whats{
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #FFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+}
+.fa-brands.fa-whatsapp{
+  font-size: 200%;
+}
+.btn_help{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+}
+
+.btn_precisaAjuda {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: #1D1A55 ;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1224px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .container-item{
+    margin: 0;
+    margin: 3%;
+  }
+  .container-imagem-sobre{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+  }
+  .container-imagem-sobre img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+  }
+  .carousel-caption {
+    display: none;
+}
+  .navbar-nav {
+    margin: 0; /* Removendo margem para melhorar espaço em telas menores */
+  }
+
+  .btn_precisaAjuda {
+    display: none; /* Ocultando o botão de ajuda em telas menores */
+  }
+
+  .carousel-inner img {
+    height: 60%; /* Ajustando altura da imagem no carrossel */
+  }
+
+  .quemSomos {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Alterando para layout de coluna em telas menores */
+    align-items: center;
+    height: auto; /* Ajustando altura conforme o conteúdo */
+ 
+  }
+
+  .quemSomos h1 {
+    font-size: 24pt !important; /* Reduzindo o tamanho do título em telas menores */
+  }
+
+  .quemSomos h2 {
+    font-size: 12pt; /* Reduzindo o tamanho do subtítulo em telas menores */
+  }
+
+  .quemSomos p {
+    width: 100%;
+    margin-right: 16px;
+    font-size: 12pt; /* Reduzindo o tamanho do texto em telas menores */
+  }
+
+  .container-imagem-sobre {
+    display: none;
+  }
+
+  .container-imagem-sobre2{
+    display: none;
+  }
+  .container-imagem-sobre img{
+  width: 50%;
+  position: absolute;
+  top: 50px;
+}
+
+.container-sections{
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.areaAtuacao{
+  width: 100%;
+  align-items: center; /* Centraliza os itens na coluna */
+  text-align: center; /* Centraliza o texto */
+}
+.titulo {
+  width: 100%;
+  margin-left: 16px;
+  font-size: 24px; /* Reduz o tamanho do título */
+  text-align: center !important;
+  margin-bottom: 1.5em;
+}
+.content-icon{
+  width: 100%;
+  font-size: 40pt !important;
+  margin-bottom: 20px;
+}
+.areaAtuacao p {
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 14pt;
+  margin-top: 5% !important;
+}
+.container-localizacao{
+  width: 100%;
+  background: url(./fundo/balanca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #fff;
+}
+
+.container-localizacao h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+.container-localizacao p{
+  width: 80%;
+  font-size: 12pt;
+  text-align: justify;
+  color: white;
+}
+.container-mapa-direita{
+  margin: 10%;
+  width: 75% ;
+  height: 80%;
+}
+#map{
+  width: 80%;
+}
+.container-imagem-sobre3{
+ display: none;
+}
+
+.container-localizacaoOnline{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto; 
+
+}
+
+.container-localizacaoOnline h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+.container-localizacaoOnline p{
+  width: 80%;
+  font-size: 12pt;
+  text-align: justify;
+  color: black;
+}
+
+.container-caixa-direita {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 35px;
+  margin-left: 17%;
+  background-color: rgba(29, 26, 85, 1);
+  border: none;
+}
+.container-caixa-direita img{
+  display: none;
+}
+.areaAtuacao2{
+  height: 10%;
+  text-align: center;
+  display: flex;
+
+}
+.areaAtuacao2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14pt;
+  color: rgb(253, 253, 253);
+  text-shadow: 5px 7px 5px rgba(255, 254, 254, 0.3);
+}
+
+.areaAtuacao2 p{
+  font-size: 10pt;
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 20px;
+  color: white;
+  font-weight: 400;
+}
+footer{
+  height:auto;
+  background-color: #710012;
+  font-size: 14pt;
+  margin-top: 50px;
+}
+.rodape{
+  font-size: 14pt;
+  color: white;
+}
+.informationFooter-rodape{
+  padding-top: 50px;
+}
+.informationFooter-rodape i{
+  display: none;
+}
+.telefones rodape, .mail, .telefones{
+  font-size: 11pt;
+}
+.logos1,
+.logos2,
+.logos3,
+.logos4 {
+  display: inline-block;
+  font-size: 1em;
+}
+
+#footer_copyright{
+  background-color: #f4f4f4;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.btn_whats{
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #FFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+}
+.fa-brands.fa-whatsapp{
+  font-size: 200%;
+}
+.btn_help{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+}
+
+.btn_precisaAjuda {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: #1D1A55 ;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
+  
+}
+
+@media (min-width: 1225px) and (max-width: 1600px){
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .container-item{
+    margin: 0;
+    margin: 3%;
+  }
+  .container-imagem-sobre{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+  }
+  .container-imagem-sobre img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+  }
+  .carousel-caption {
+    display: none;
+}
+  .navbar-nav {
+    margin: 0; /* Removendo margem para melhorar espaço em telas menores */
+  }
+ 
+  .nav-item{
+    margin: 15px;
+    text-align: center;
+  }
+  
+
+  .carousel-inner img {
+    height: 60%; /* Ajustando altura da imagem no carrossel */
+  }
+
+  .quemSomos {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Alterando para layout de coluna em telas menores */
+    align-items: center;
+    height: auto; /* Ajustando altura conforme o conteúdo */
+  }
+
+  .quemSomos h1 {
+    font-size: 28pt !important; /* Reduzindo o tamanho do título em telas menores */
+  }
+
+  .quemSomos h2 {
+    font-size: 16pt; /* Reduzindo o tamanho do subtítulo em telas menores */
+  }
+
+  .quemSomos p {
+    width: 100%;
+    margin-right: 16px;
+    font-size: 18pt; /* Reduzindo o tamanho do texto em telas menores */
+  }
+
+  .container-imagem-sobre {
+    display: none;
+  }
+
+  .container-imagem-sobre2{
+    display: none;
+  }
+  .container-imagem-sobre img{
+  width: 50%;
+  position: absolute;
+  top: 50px;
+}
+
+.container-sections{
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.areaAtuacao{
+  width: 100%;
+  align-items: center; /* Centraliza os itens na coluna */
+  text-align: center; /* Centraliza o texto */
+}
+.titulo {
+  width: 100%;
+  margin-left: 16px;
+  font-size: 26pt; /* Reduz o tamanho do título */
+  text-align: center !important;
+  margin-bottom: 1.5em;
+}
+.content-icon{
+  width: 100%;
+  font-size: 50pt !important;
+  margin-bottom: 20px;
+}
+
+.areaAtuacao p {
+  width: 100%;
+  font-size: 15pt;
+  margin-top: 3%;
+}
+
+.container-localizacao{
+  width: 100%;
+  height: auto;
+  background: url(./fundo/balanca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #fff;
+}
+
+.container-localizacao h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 24pt;
+  text-align: center;
+}
+.container-localizacao p{
+  width: 80%;
+  font-size: 16pt;
+  text-align: justify;
+  color: white;
+}
+.container-mapa-direita{
+  margin: 10%;
+  width: 75% ;
+  height: 80%;
+}
+#map{
+  width: 100%;
+}
+.container-imagem-sobre3{
+ display: none;
+}
+
+.container-localizacaoOnline{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto; 
+}
+
+.container-localizacaoOnline h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 24pt;
+  text-align: center;
+}
+.container-localizacaoOnline p{
+  width: 80%;
+  font-size: 16pt;
+  text-align: justify;
+  color: black;
+}
+
+.container-caixa-direita {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 35px;
+  margin-left: 17%;
+  background-color: rgba(29, 26, 85, 1);
+  border: none;
+}
+.container-caixa-direita img{
+  display: none;
+}
+.areaAtuacao2{
+  height: 10%;
+  text-align: center;
+  display: flex;
+}
+.areaAtuacao2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16pt;
+  color: rgb(253, 253, 253);
+  text-shadow: 5px 7px 5px rgba(255, 254, 254, 0.3);
+}
+
+.areaAtuacao2 p{
+  font-size: 14pt;
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 20px;
+  color: white;
+  font-weight: 400;
+}
+footer{
+  height:auto;
+  background-color: #710012;
+  font-size: 14pt;
+  margin-top: 50px;
+}
+.rodape{
+  font-size: 14pt;
+  color: white;
+}
+.informationFooter-rodape{
+  padding-top: 50px;
+}
+.telefones rodape, .mail, .telefones{
+  font-size: 14pt;
+}
+#footer_copyright{
+  background-color: #f4f4f4;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.btn_whats{
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #FFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+}
+.fa-brands.fa-whatsapp{
+  font-size: 200%;
+}
+.btn_help{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+}
+
+.btn_precisaAjuda {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: #1D1A55 ;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
+}
