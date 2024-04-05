@@ -43,18 +43,10 @@ p {
 
 /*Padding entre as seções*/
 .sections {
-    padding-top: 10%;
+    padding-top: 8%;
     margin-bottom: 5%;
 }
 
-/*titulos do site*/
-.sections__titulo {
-    font-family: var(--titulo);
-    color: var(--azulMarinho);
-    font-size: 3.5em;
-    margin-bottom: 1.5%;
-    text-align: center;
-}
 
 
 
@@ -65,6 +57,7 @@ p {
 
 .colornav {
     background-color: var(--vinhoEscuro);
+    color: var(--branco);
 }
 
 /*Navbar para mudar a cor ao passar o mouse*/
@@ -76,24 +69,14 @@ p {
     width: 200px;
 }
 
-.colornav {
-    color: var(--branco);
-}
-
-.btn_precisaAjuda {
-    position: fixed;
-    width: 200px;
-    padding: 10px;
-    top: 20px;
-    right: 40px;
+.faleadvogado {
+    padding: 15px;
     background-color: var(--azulMarinho);
     color: var(--branco);
     border-radius: 30px;
     text-align: center;
-    font-size: 16px;
-    z-index: 1000;
+    font-size: 1.4rem;
     text-decoration: none;
-    line-height: 1.5;
 }
 
 /*Fim navbar*/
@@ -102,11 +85,21 @@ p {
 
 /*Início do quem somos*/
 
-.sections__titulo_advogada {
+.sections__titulo__advogado {
+    font-family: var(--titulo);
+    color: var(--azulMarinho);
+    font-size: 3.0em;
+    margin-bottom: 1.5%;
+}
+
+.sections__titulo__enfase {
     font-family: var(--titulo);
     color: var(--vinhoEscuro);
-    font-size: 3.5em;
+    font-size: 2.0em;
     margin-bottom: 1.5%;
+}
+
+.homepage {
     text-align: center;
 }
 
@@ -245,10 +238,6 @@ b {
         max-width: 600px;
     }
 
-    .btn_precisaAjuda {
-        display: none;
-    }
-
     #carousel__header {
         margin-top: 20%;
     }
@@ -259,8 +248,4 @@ b {
 
 }
 
-@media (max-width: 1400px) {
-    .btn_precisaAjuda {
-        display: none;
-    }
-}
+@media (max-width: 1400px) {}
