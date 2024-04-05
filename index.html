@@ -97,7 +97,7 @@
                 <!--Fim do botão de ajuda percorrendo a página-->
                 <a class="navbar-brand" href="#">
                     <figure>
-                        <img src="/logotipo/logotipoNavBar.png" class="logoNavBar" alt="logotipo Ataide Advocacia">
+                        <img src="/logotipo/Secundario/Branco.png" class="logoNavBar" alt="logotipo Ataide Advocacia">
                     </figure>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -189,7 +189,7 @@
         <!--Inicio da Navbar (elemento bootstrap)-->
 
         <!-- Inicio do Carousel -->
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carousel__header" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <img src="/fundo/banner1.png" class="d-block w-100" alt="...">
@@ -201,12 +201,11 @@
                     <img src="/fundo/banner3.png" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel__header" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel__headerl"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -239,9 +238,9 @@
                     </p>
                 </div>
                 <div class="col-md-6 ms-auto">
-                    <figure>
-                        <img src="https://via.placeholder.com/600x400" alt="">
-                    </figure>
+                    <div>
+                        <img class="img-fluid" src="/fundo/escritorio.png" alt="">
+                    </div>
                 </div>
             </div>
 
@@ -253,11 +252,10 @@
         <!--Inicio da seção Advogada Titular-->
         <section class="sections container" id="advogadaTitular">
             <h2 class="sections__titulo">Advogada Titular</h2>
+            <h1 class="sections__titulo_advogada">KARLA ATAIDE</h1>
             <div class="row">
                 <div class="col-md-6 ms-auto">
-                    <figure>
-                        <img src="https://via.placeholder.com/600x400" alt="">
-                    </figure>
+                    <img class="img-fluid" src="/fundo/titular.png" alt="">
                 </div>
                 <div class="col-md-6 ms-auto">
                     <p>Karla Ataide é a Advogada Titular do Escritório, sendo
@@ -316,7 +314,7 @@
 
 
                 <!--Ínicio da segunda linha da área de atuação-->
-                <div class="row lineAreaAtuacao">
+                <div class="row sections_areaAtuacao">
                     <!--Previdenciário-->
                     <div class="col-md-3 ms-auto sections__areaAtuacao__icones">
                         <a href="areas-de-atuacao/familia.html">
@@ -361,7 +359,8 @@
 
         <!-- Inicio da seção Consulta Virtual -->
         <section class="sections container" id="virtual">
-            <h3 class="sections_titulo">Consulta Virtual</h3>
+            <h3 class="sections__titulo">Como funciona nosso atendimento virtual?</h3>
+            <br>
             <div>
                 <div class="row">
                     <div class="col-md-6 ms-auto">
@@ -378,33 +377,41 @@
                     <div class="col-md-6 ms-auto">
                         <div class="row justify-content-center">
                             <div class="col-md-6 ms-auto">
-                                <h5><i class="fa-solid fa-check fa-2xl content-icon"></i>
-                                    AGENDAMENTO DE CONSULTAS PELO WHATSAPPS</h5>
-                                <p>Apresentamos nossa agenda e você escolhe o melhor horário para você</p>
+                                <h2 class="virtual__titulo">
+                                    <i class="fa-solid fa-check fa-2xl virtual__icone"></i>
+                                    AGENDAMENTO DE CONSULTAS PELO WHATSAPPS
+                                </h2>
+                                <p class="virtual__texto">Apresentamos nossa agenda e você escolhe o melhor horário para
+                                    você</p>
                             </div>
                             <div class="col-md-6 ms-auto">
-                                <h5><i class="fa-solid fa-check fa-2xl content-icon"></i>
-                                    CONSULTA, ENTREVISTA E ANÁLISE DE DOCUMNTOS EM TEMPO REAL</h5>
-                                <p>Você é atendido(a) como se estivesse
+                                <h2 class="virtual__titulo">
+                                    <i class="fa-solid fa-check fa-2xl virtual__icone"></i>
+                                    CONSULTA, ENTREVISTA E ANÁLISE DE DOCUMENTOS EM TEMPO REAL
+                                </h2>
+                                <p class="virtual__texto">Você é atendido(a) como se estivesse
                                     na frente do seu Advogado, através de
                                     videochamada</p>
                             </div>
                         </div>
+                        <br>
                         <div class="row justify-content-center">
                             <div class="col-md-6 ms-auto">
-                                <h5><i class="fa-solid fa-check fa-2xl content-icon"></i>
-                                    ASSINATURA DIGITAL DE
-                                    DOCUMENTOS COM UM
-                                    CLICK</h5>
-                                <p>Através do Portal de
+                                <h2 class="virtual__titulo">
+                                    <i class="fa-solid fa-check fa-2xl virtual__icone"></i>
+                                    ASSINATURA DIGITAL DE DOCUMENTOS COM UM CLICK
+                                </h2>
+                                <p class="virtual__texto">Através do Portal de
                                     Assinaturas da OAB, você
                                     assina com um click no
                                     seu e-mail </p>
                             </div>
                             <div class="col-md-6 ms-auto">
-                                <h5><i class="fa-solid fa-check fa-2xl content-icon"></i>
-                                    PROCESSO 100% DIGITAL</h5>
-                                <p>Através do processo digital e
+                                <h2 class="virtual__titulo">
+                                    <i class="fa-solid fa-check fa-2xl virtual__icone"></i>
+                                    PROCESSO 100% DIGITAL
+                                </h2>
+                                <p class="virtual__texto">Através do processo digital e
                                     ferramentas tecnológicas de
                                     coleta de provas, as audiências
                                     e diligências processuais podem
@@ -420,36 +427,40 @@
 
         <!-- Inicio da seção Consulta Presencial -->
         <section class="sections container" id="presencial">
-            <h3 class="sections_titulo">Consulta Presencial</h3>
+            <h3 class="sections__titulo">Como funciona nosso atendimento presencial?</h3>
             <div class="row justify-content-around">
                 <div class="col-md-6 ms-auto">
-                    <h5>COMO FUNCIONA NOSSO ATENDIMENTO PRESENCIAL?</h5>
                     <p>O atendimento presencial ocorre na região
                         metropolitana de Belém-PA nos três endereços
                         abaixo. Mas antes é preciso agendar a consulta pelo
                         telefone ou whatsapp, onde saberá o tipo de
                         consulta prestada e receberá instruções para sua
                         consulta:</p>
-                    <br>
-                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;Ed Sintesi Plaza, Sala 12, térreo, ATEP, localizada
+                    <p><i class="fa-solid fa-location-dot presencial_icones"></i>&nbsp;<b>Ed Sintesi Plaza</b>, Sala 12,
+                        térreo, ATEP,
+                        localizada
                         na av
                         Senador Lemos nº 791, Bairro Umarizal, Belém-PA.
                     </p>
-                    <br>
-                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;Criart Coworking: Travessa Mariz e Barros 3334,
+
+                    <p><i class="fa-solid fa-location-dot presencial_icones"></i>&nbsp;<b>Criart Coworking</b>, Travessa
+                        Mariz e Barros
+                        3334,
                         entre Av
                         João Paulo e Passagem São Pedro, Bairro Marco, Belém-PA
                     </p>
-                    <br>
-                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;Meet Up Office – Coworking Rodovia BR 316, 893
+
+                    <p><i class="fa-solid fa-location-dot presencial_icones"></i>&nbsp;<b>Meet Up Office</b>, Coworking
+                        Rodovia BR 316,
+                        893
                         Edifício Living Next Office, Ananindeua – PA.
                     </p>
-                    <br>
+
                 </div>
                 <div class="col-md-6 ms-auto">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15749.209225604844!2d-37.26636!3d-9.306459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70621f9df610561%3A0x24b46d9e21cd0e98!2sAta%C3%ADde%20advocacia!5e0!3m2!1spt-BR!2sbr!4v1712289331721!5m2!1spt-BR!2sbr"
-                        width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -504,9 +515,9 @@
                             <i class="fa-solid fa-scale-balanced"></i>
                         </h3>
 
-                        <h4 class="rodape__dado"><i class="fa-solid fa-building"></i>&nbsp;&nbsp;Presencial</h4>
+                        <h4 class="rodape__dados"><i class="fa-solid fa-building"></i>&nbsp;&nbsp;Presencial</h4>
 
-                        <h4 class="rodape__dado"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Virtual</h4>
+                        <h4 class="rodape__dados"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Virtual</h4>
                     </div>
                 </div>
             </div>
@@ -516,7 +527,7 @@
             <i class="fa-brands fa-whatsapp"></i>
         </a>
 
-        <div id="rodape__copyright">
+        <div class="rodape__copyright">
             Copyright
             &#169;
             2024 Ataide Advocacia | Powered by <a target="_blank" href="https://firstcode.maestrus.com/home/">First

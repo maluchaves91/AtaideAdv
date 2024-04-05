@@ -33,6 +33,14 @@ body {
     background-color: var(--branco);
 }
 
+p {
+    font-family: var(--texto);
+    hyphens: auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+}
+
 /*Padding entre as seções*/
 .sections {
     padding-top: 10%;
@@ -40,21 +48,25 @@ body {
 }
 
 /*titulos do site*/
-.titulo {
+.sections__titulo {
     font-family: var(--titulo);
     color: var(--azulMarinho);
     font-size: 3.5em;
-    margin-bottom: 1%;
+    margin-bottom: 1.5%;
+    text-align: center;
 }
 
-.navbarvermelho {
-    background-color: var(--vinhoEscuro);
-}
+
 
 /* Fim estutura do site*/
 
 
 /*Início navbar*/
+
+.navbarvermelho {
+    background-color: var(--vinhoEscuro);
+}
+
 /*Navbar para mudar a cor ao passar o mouse*/
 .dropdown-menu a.dropdown-item:hover {
     background-color: var(--rosaClaro);
@@ -62,6 +74,10 @@ body {
 
 .logoNavBar {
     width: 200px;
+}
+
+.colornav {
+    color: var(--branco);
 }
 
 .btn_precisaAjuda {
@@ -86,6 +102,13 @@ body {
 
 /*Início do quem somos*/
 
+.sections__titulo_advogada {
+    font-family: var(--titulo);
+    color: var(--vinhoEscuro);
+    font-size: 3.5em;
+    margin-bottom: 1.5%;
+    text-align: center;
+}
 
 /*Fim do quem somos*/
 
@@ -94,58 +117,51 @@ body {
 /*cores dos ícones da área de atuação*/
 .areaAtuacao__icones {
     color: var(--azulMarinho);
-    margin-right: 2%;
+    margin: 10%;
 }
 
 .sections__areaAtuacao__icones a {
     text-decoration: none;
-    font-family: var(--titulo);
-    color: var(--preto);
+    font-family: var(--texto);
+    font-weight: 500;
+    color: var(--azulMarinho);
     font-size: x-large;
+}
+
+.sections_areaAtuacao {
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 /*Fim áreas de atuação*/
 
+/* Inicio da área Consulta Virtual */
 
-/*Início do Nossa Equipe + Advogados Parceiros*/
-/*ajuste da imagem e das cores de cada imagem dos advogados*/
-.smooth-zoom {
-    border-radius: 5px;
-    width: 100%;
-    transition: transform 0.3s ease;
-    /* Transição suave */
-    background: rgb(214, 214, 214);
-    background: linear-gradient(165deg, rgba(214, 214, 214, 1) 0%, rgba(249, 249, 249, 1) 100%);
+.virtual__titulo {
+    font-family: var(--texto);
+    font-size: 1.4rem;
+    color: var(--azulMarinho);
+    font-weight: 800;
 }
 
-/*Efeito de zoom quando passa o mouse*/
-.smooth-zoom:hover {
-    transform: scale(1.08);
-    /* Efeito de zoom suave */
+.virtual__texto {
+    font-family: var(--texto);
+    font-size: 1.2rem;
 }
 
-/*para conter a imagem dos advogados dentro da div*/
-.holder2 {
-    overflow: hidden;
-    width: 300px;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
+.virtual__icone {
+    margin: 5%;
+    margin-bottom: 7%;
 }
 
-/*Para alinhar o accordion com a imagem dos advogados*/
-.advogadosCard {
-    width: 60%;
-    overflow: hidden;
+.presencial_icones {
+    color: var(--azulMarinho);
 }
 
-/*margim para não deixar o título colado com o nome dos advogados*/
-.nomesAdvogados {
-    margin-top: 10%;
+b {
+    color: var(--azulMarinho);
 }
-
-/*Fim do Nossa Equipe + Advogados Parceiros*/
-
 
 /*Início do rodapé*/
 /*Para deixar fixado em baixo o rodapé*/
@@ -154,36 +170,33 @@ body {
     padding-top: 3%;
     padding-bottom: 4%;
     line-height: 250%;
-    background-color: black;
+    background-color: var(--vinhoEscuro);
 
 }
 
 /*Estilo do rodapé*/
 .rodape__titulo {
     font-size: 190%;
-    color: #c18824;
+    color: var(--rosaClaro);
     font-family: var(--texto);
 }
 
 
-.telefones,
-.mail {
-    color: white;
+.rodape__dados {
+    color: var(--branco);
     text-decoration: none;
     font-size: 150%;
 }
 
-.telefones:hover {
-    color: #c18824;
-    text-decoration: none;
-    font-size: 170%;
-
-}
-
-.mail:hover {
-    color: #c18824;
+.rodape__dados:hover {
+    color: var(--rosaClaro);
     text-decoration: none;
     font-size: 155%;
+}
+
+.rodape__redes {
+    text-decoration: none;
+    color: var(--branco);
 }
 
 .logos1,
@@ -198,9 +211,10 @@ body {
 .logos3:hover,
 .logos4:hover {
     font-size: 180%;
+    color: var(--rosaClaro);
 }
 
-.btn_whats {
+.rodape__whats__flutuante {
     position: fixed;
     width: 60px;
     height: 60px;
@@ -215,6 +229,38 @@ body {
     z-index: 1000;
 }
 
+.rodape__copyright {
+    text-align: center;
+}
 
+.rodape__copyright a {
+    text-decoration: none;
+    color: var(--preto);
+}
 
 /*FIM do rodapé*/
+
+@media screen and (max-width: 768px) {
+    .sections__imagens {
+        max-width: 600px;
+    }
+
+    .btn_precisaAjuda {
+        display: none;
+    }
+
+    #carousel__header {
+        margin-top: 20%;
+    }
+
+    .colornav {
+        background-color: var(--vinhoEscuro);
+    }
+
+}
+
+@media (max-width: 1400px) {
+    .btn_precisaAjuda {
+        display: none;
+    }
+}
