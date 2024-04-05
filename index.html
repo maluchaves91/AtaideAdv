@@ -88,7 +88,7 @@
     <!--cabeçalho do site-->
     <header>
         <!--Inicio da Navbar (elemento bootstrap)-->
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top colornav">
             <div class="container">
                 <!--Botão precisa de ajuda percorrendo a página-->
                 <a target="_blank" href="https://wa.me/5591989445005?text=Olá, tudo bem?" class="btn_precisaAjuda">
@@ -240,7 +240,7 @@
                 </div>
                 <div class="col-md-6 ms-auto">
                     <figure>
-                        <img src="https://via.placeholder.com/200x200" alt="">
+                        <img src="https://via.placeholder.com/600x400" alt="">
                     </figure>
                 </div>
             </div>
@@ -256,7 +256,7 @@
             <div class="row">
                 <div class="col-md-6 ms-auto">
                     <figure>
-                        <img src="https://via.placeholder.com/200x200" alt="">
+                        <img src="https://via.placeholder.com/600x400" alt="">
                     </figure>
                 </div>
                 <div class="col-md-6 ms-auto">
@@ -280,12 +280,12 @@
 
         <!--Inicio da seção áreas de atuação-->
         <section class="sections container" id="area">
-            <h3 class="sections_titulo">Áreas de atuação</h3>
+            <h3 class="sections__titulo">Áreas de atuação</h3>
             <div>
                 <!--Ínicio da primeira linha da área de atuação-->
                 <div class="row sections_areaAtuacao">
                     <!--Trabalhista pro Trabalhador-->
-                    <div class="col-md-4 ms-auto areaAtuacao">
+                    <div class="col-md-4 ms-auto sections__areaAtuacao__icones">
                         <a href="areas-de-atuacao/civil.html">
                             <i class="fa-solid fa-handshake fa-2xl content-icon"></i>
                             <br>
@@ -294,7 +294,7 @@
                     </div>
 
                     <!--Trabalhista Empresarial-->
-                    <div class="col-md-4 ms-auto areaAtuacao">
+                    <div class="col-md-4 ms-auto sections__areaAtuacao__icones">
                         <a href="areas-de-atuacao/consumidor.html">
                             <i class="fa-solid fa-file-invoice fa-2xl content-icon"></i>
                             <br>
@@ -303,7 +303,7 @@
                     </div>
 
                     <!--Acidente e Doença do Trabalho-->
-                    <div class="col-md-4 ms-auto areaAtuacao">
+                    <div class="col-md-4 ms-auto sections__areaAtuacao__icones">
                         <a href="areas-de-atuacao/criminal.html">
                             <i class="fa-solid fa-person-falling-burst fa-2xl content-icon"></i>
                             <br>
@@ -318,7 +318,7 @@
                 <!--Ínicio da segunda linha da área de atuação-->
                 <div class="row lineAreaAtuacao">
                     <!--Previdenciário-->
-                    <div class="col-md-3 ms-auto areaAtuacao">
+                    <div class="col-md-3 ms-auto sections__areaAtuacao__icones">
                         <a href="areas-de-atuacao/familia.html">
                             <i class="fa-solid fa-sack-dollar fa-2xl content-icon"></i>
                             <br>
@@ -327,7 +327,7 @@
                     </div>
 
                     <!--Inventário Judicial e Extrajudicial-->
-                    <div class="col-md-3 ms-auto areaAtuacao">
+                    <div class="col-md-3 ms-auto sections__areaAtuacao__icones">
                         <a href="areas-de-atuacao/previdenciario.html">
                             <i class="fa-solid fa-balance-scale fa-2xl content-icon"></i>
                             <br>
@@ -336,7 +336,7 @@
                     </div>
 
                     <!--Direito Condominial-->
-                    <div class="col-md-3 ms-auto areaAtuacao">
+                    <div class="col-md-3 ms-auto sections__areaAtuacao__icones">
                         <a href="areas-de-atuacao/trabalhista.html">
                             <i class="fa-solid fa-building-user fa-2xl content-icon"></i>
                             <br>
@@ -345,7 +345,7 @@
                     </div>
 
                     <!--Direito dos Animais-->
-                    <div class="col-md-3 ms-auto areaAtuacao">
+                    <div class="col-md-3 ms-auto sections__areaAtuacao__icones">
                         <a href="areas-de-atuacao/trabalhista.html">
                             <i class="fa-solid fa-shield-dog fa-2xl content-icon"></i>
                             <br>
@@ -467,32 +467,31 @@
             <div class="container text-center">
                 <div class="row align-items-start">
                     <div class="col-md-4">
-                        <h3 class="informationFooter-rodape">Nosso telefone</h3>
+                        <h3 class="rodape__titulo">Nosso telefone</h3>
 
-                        <h4 class="telefones rodape">(91)&nbsp;98944-5005</h4>
-                        <!-- <h4 class="telefones rodape">(13)&nbsp;99111-1285</h4> -->
+                        <h4 class="rodape__dados">(91)&nbsp;98944-5005</h4>
 
-                        <a class="mail"
+                        <a class="rodape__dados"
                             href="mailto:karlaataideadvocacia@gmail.com?subject=Gostaria de tirar dúvidas">karlaataideadvocacia@gmail.com
                         </a>
                     </div>
 
                     <div class="col-md-4">
-                        <h3 class="informationFooter-rodape">Nos siga nas redes sociais</h3>
+                        <h3 class="rodape__titulo">Nos siga nas redes sociais</h3>
 
-                        <a class="telefones logos1 rodape" target="_blank" href="https://wa.me/5591989445005">
+                        <a class="rodape__redes logos1" target="_blank" href="https://wa.me/5591989445005">
                             <i class="fa-brands fa-whatsapp fa-xl"></i>
                         </a>
                         &nbsp;
-                        <a class="telefones logos2 rodape" href="https://www.linkedin.com/in/karla-ataide-247965220"><i
+                        <a class="rodape__redes logos2" href="https://www.linkedin.com/in/karla-ataide-247965220"><i
                                 class="fa-brands fa-linkedin fa-xl"></i>
                         </a>
                         &nbsp;
-                        <a target="_blank" class="telefones logos3 rodape"
+                        <a target="_blank" class="rodape__redes logos3"
                             href="https://www.facebook.com/karla.ataide.7"><i class="fa-brands fa-facebook fa-xl"></i>
                         </a>
                         &nbsp;
-                        <a target="_blank" class="telefones logos4 rodape"
+                        <a target="_blank" class="rodape__redes logos4"
                             href="https://www.instagram.com/adv.karlaataide/">
                             <i class="fa-brands fa-instagram fa-xl"></i>
                         </a>
@@ -500,24 +499,24 @@
                     </div>
 
                     <div class="col-md-4">
-                        <h3 class="informationFooter-rodape">
+                        <h3 class="rodape__titulo">
                             Atendimentos &nbsp;
                             <i class="fa-solid fa-scale-balanced"></i>
                         </h3>
 
-                        <h4 class="telefones "><i class="fa-solid fa-building"></i>&nbsp;&nbsp;Presencial</h4>
+                        <h4 class="rodape__dado"><i class="fa-solid fa-building"></i>&nbsp;&nbsp;Presencial</h4>
 
-                        <h4 class="telefones "><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Virtual</h4>
+                        <h4 class="rodape__dado"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Virtual</h4>
                     </div>
                 </div>
             </div>
         </section>
 
-        <a href="https://wa.me/5591989445005?text=Olá, tudo bem?" class="btn_whats" target="_blank">
+        <a href="https://wa.me/5591989445005?text=Olá, tudo bem?" class="rodape__whats__flutuante" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
 
-        <div id="footer_copyright">
+        <div id="rodape__copyright">
             Copyright
             &#169;
             2024 Ataide Advocacia | Powered by <a target="_blank" href="https://firstcode.maestrus.com/home/">First

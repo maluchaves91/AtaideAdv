@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 * {
     padding: 0;
@@ -21,20 +21,16 @@ body {
     --azulMarinho: #1d1A55;
     --cinza: #797979;
     --branco: #EBEBEB;
+    --rosaClaro: #ffd0d0;
+    --titulo: "Bellefair", serif;
+    --texto: "Tajawal", sans-serif;
 }
 
-
-
-.grid-2-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
 
 /*Estutura do site*/
 /*cor da página*/
 body {
-    background-color: white;
+    background-color: var(--branco);
 }
 
 /*Padding entre as seções*/
@@ -45,12 +41,15 @@ body {
 
 /*titulos do site*/
 .titulo {
-    font-family: 'Ysabeau Office', sans-serif;
-    color: #cf9b4b;
+    font-family: var(--titulo);
+    color: var(--azulMarinho);
     font-size: 3.5em;
     margin-bottom: 1%;
 }
 
+.navbarvermelho {
+    background-color: var(--vinhoEscuro);
+}
 
 /* Fim estutura do site*/
 
@@ -58,12 +57,27 @@ body {
 /*Início navbar*/
 /*Navbar para mudar a cor ao passar o mouse*/
 .dropdown-menu a.dropdown-item:hover {
-    background-color: #f0d6b6;
-    color: #000;
+    background-color: var(--rosaClaro);
 }
 
 .logoNavBar {
     width: 200px;
+}
+
+.btn_precisaAjuda {
+    position: fixed;
+    width: 200px;
+    padding: 10px;
+    top: 20px;
+    right: 40px;
+    background-color: var(--azulMarinho);
+    color: var(--branco);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000;
+    text-decoration: none;
+    line-height: 1.5;
 }
 
 /*Fim navbar*/
@@ -71,42 +85,23 @@ body {
 
 
 /*Início do quem somos*/
-.quemSomos {
-    display: flex;
-    justify-content: center;
-}
 
-.quemSomos p {
-    width: 60%;
-    /* text-align: justify; */
-    margin-top: 5%;
-    padding: auto;
-    line-height: 2;
-    font-family: 'Ysabeau Office', sans-serif;
-    font-size: x-large;
-}
 
 /*Fim do quem somos*/
 
 
 /*Início áreas de atuação*/
 /*cores dos ícones da área de atuação*/
-.content-icon {
-    color: #cf9b4b;
+.areaAtuacao__icones {
+    color: var(--azulMarinho);
     margin-right: 2%;
 }
 
-.areaAtuacao a {
+.sections__areaAtuacao__icones a {
     text-decoration: none;
-    font-family: 'Ysabeau Office', sans-serif;
-    color: black;
+    font-family: var(--titulo);
+    color: var(--preto);
     font-size: x-large;
-}
-
-.lineAreaAtuacao {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    text-align: center;
 }
 
 /*Fim áreas de atuação*/
@@ -164,10 +159,10 @@ body {
 }
 
 /*Estilo do rodapé*/
-.informationFooter {
+.rodape__titulo {
     font-size: 190%;
     color: #c18824;
-    font-family: 'Ysabeau Office', sans-serif;
+    font-family: var(--texto);
 }
 
 
@@ -220,36 +215,6 @@ body {
     z-index: 1000;
 }
 
-.btn_help {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    left: 40px;
-    background-color: #c18824;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 1px 1px 2px #888;
-    z-index: 1000;
-    display: none;
-}
 
-.btn_precisaAjuda {
-    position: fixed;
-    width: 200px;
-    padding: 10px;
-    top: 20px;
-    right: 40px;
-    background-color: #c18824;
-    color: #FFF;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 16px;
-    z-index: 1000;
-    text-decoration: none;
-    line-height: 1.5;
-}
 
 /*FIM do rodapé*/
