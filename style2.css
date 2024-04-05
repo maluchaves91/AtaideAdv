@@ -1,0 +1,228 @@
+.grid-2-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/*Estutura do site*/
+/*cor da página*/
+body {
+    background-color: white;
+}
+
+/*Padding entre as seções*/
+.sections {
+    padding-top: 10%;
+    margin-bottom: 5%;
+}
+
+/*titulos do site*/
+.titulo {
+    font-family: 'Ysabeau Office', sans-serif;
+    color: #cf9b4b;
+    font-size: 3.5em;
+    margin-bottom: 1%;
+}
+
+
+/* Fim estutura do site*/
+
+
+/*Início navbar*/
+/*Navbar para mudar a cor ao passar o mouse*/
+.dropdown-menu a.dropdown-item:hover {
+    background-color: #f0d6b6;
+    color: #000;
+}
+
+.logoNavBar {
+    width: 200px;
+}
+
+/*Fim navbar*/
+
+
+
+/*Início do quem somos*/
+.quemSomos {
+    display: flex;
+    justify-content: center;
+}
+
+.quemSomos p {
+    width: 60%;
+    /* text-align: justify; */
+    margin-top: 5%;
+    padding: auto;
+    line-height: 2;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: x-large;
+}
+
+/*Fim do quem somos*/
+
+
+/*Início áreas de atuação*/
+/*cores dos ícones da área de atuação*/
+.content-icon {
+    color: #cf9b4b;
+    margin-right: 2%;
+}
+
+.areaAtuacao a {
+    text-decoration: none;
+    font-family: 'Ysabeau Office', sans-serif;
+    color: black;
+    font-size: x-large;
+}
+
+.lineAreaAtuacao {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+/*Fim áreas de atuação*/
+
+
+/*Início do Nossa Equipe + Advogados Parceiros*/
+/*ajuste da imagem e das cores de cada imagem dos advogados*/
+.smooth-zoom {
+    border-radius: 5px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    /* Transição suave */
+    background: rgb(214, 214, 214);
+    background: linear-gradient(165deg, rgba(214, 214, 214, 1) 0%, rgba(249, 249, 249, 1) 100%);
+}
+
+/*Efeito de zoom quando passa o mouse*/
+.smooth-zoom:hover {
+    transform: scale(1.08);
+    /* Efeito de zoom suave */
+}
+
+/*para conter a imagem dos advogados dentro da div*/
+.holder2 {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Para alinhar o accordion com a imagem dos advogados*/
+.advogadosCard {
+    width: 60%;
+    overflow: hidden;
+}
+
+/*margim para não deixar o título colado com o nome dos advogados*/
+.nomesAdvogados {
+    margin-top: 10%;
+}
+
+/*Fim do Nossa Equipe + Advogados Parceiros*/
+
+
+/*Início do rodapé*/
+/*Para deixar fixado em baixo o rodapé*/
+.rodape {
+    bottom: 0;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    line-height: 250%;
+    background-color: black;
+
+}
+
+/*Estilo do rodapé*/
+.informationFooter {
+    font-size: 190%;
+    color: #c18824;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+
+.telefones,
+.mail {
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.telefones:hover {
+    color: #c18824;
+    text-decoration: none;
+    font-size: 170%;
+
+}
+
+.mail:hover {
+    color: #c18824;
+    text-decoration: none;
+    font-size: 155%;
+}
+
+.logos1,
+.logos2,
+.logos3,
+.logos4 {
+    font-size: 210%;
+}
+
+.logos1:hover,
+.logos2:hover,
+.logos3:hover,
+.logos4:hover {
+    font-size: 180%;
+}
+
+.btn_whats {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.btn_help {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    background-color: #c18824;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    display: none;
+}
+
+.btn_precisaAjuda {
+    position: fixed;
+    width: 200px;
+    padding: 10px;
+    top: 20px;
+    right: 40px;
+    background-color: #c18824;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+/*FIM do rodapé*/

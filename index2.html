@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<!--setor que não é visível ao usuário-->
+
+<head>
+    <!--Colocar os meta para vincular melhor no Google-->
+
+    <!--FIM - Colocar os meta para vincular melhor no Google-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VN Advocacia</title>
+
+    <!--Para substituir o ícone do google para o logo da empresa-->
+    <link rel="icon" href="/logotipo/Icone/Branco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/logotipo/Icone/Branco.png" type="image/x-icon">
+    <!--Fim para substituir o ícone do google para o logo da empresa-->
+
+    <!--especifica a base URL para todos os links do site-->
+    <!-- <base href="https://www.ataideadv.com.br/"> -->
+
+    <!-- Descrição do que se trata o site-->
+    <meta name="description"
+        content="ATAIDE ADVOCACIA: soluções jurídicas inteligentes personalizadas e humanizadas! Atendemos nossos clientes de forma pessoal, obedecendo o Estatuto da OAB e o Contrato">
+
+    <!-- Lista das principais palavras-chave do site -->
+    <meta name="keywords"
+        content="advocacia, direito trabalhista, direito empresarial, direito previdenciário, inventário, direito condominial, direito dos animais, escritório de advocacia">
+
+    <!-- Autor do site -->
+    <meta name="author" content="First Code - https://firstcode.maestrus.com/home/">
+
+    <!-- Direitos autorais do criador -->
+    <meta name="copyrigth" content="© 2023 First Code">
+
+    <!-- Latitude e longitude do escritório -->
+    <meta name="geo.position" content="-9.306299802443071, -37.26638551946915">
+
+    <!-- Região da localização do escritório -->
+    <meta name="geo.placename" content="PA-BR">
+
+    <!-- Informações para redes sociais usares-->
+    <meta property="og:url" content="https://www.ataideadv.com.br/">
+
+    <!-- Para identificar o tipo de conteúdo do site -->
+    <meta property="og:type" content="website">
+
+    <!-- Exibir adequadamente o titulo do site em redes sociais -->
+    <meta name="og:title" content="Ataide Advocacia">
+
+    <!-- Informa a descrição da página para as redes sociais -->
+    <meta property="og:description"
+        content="ATAIDE ADVOCACIA: soluções jurídicas inteligentes personalizadas e humanizadas! Atendemos nossos clientes de forma pessoal, obedecendo o Estatuto da OAB e o Contrato">
+
+    <!-- Mostra a imagem do site em redes sociais -->
+    <meta name="og:image" content="COLOCAR AQUI">
+
+    <!-- Exibe o nome do site em redes sociais -->
+    <meta property="og:site_name" content="Ataide Advocacia">
+
+    <!-- Ajuda a informar ao navegador a página original do site -->
+    <link rel="canonical" href="https://www.ataideadv.com.br/">
+
+    <!--Link boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--FIM do link boostrap-->
+
+    <!--Vinculo com CSS-->
+    <link rel="stylesheet" href="style2.css">
+    <!--Fim do vinculo com CSS-->
+
+    <!--Fontawesome - Ícones-->
+    <script src="https://kit.fontawesome.com/3b7c1eabb4.js" crossorigin="anonymous"></script>
+    <!--Fim da fontawesome - Ícones-->
+
+</head>
+<!-- fim setor que não é visível ao usuário-->
+
+<body>
+    <!--link bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!--Fim do link bootstrap-->
+
+    <!--cabeçalho do site-->
+    <header>
+        <!--Inicio da Navbar (elemento bootstrap)-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!--Botão precisa de ajuda percorrendo a página-->
+                <a href="https://wa.me/5591989445005?text=Olá, tudo bem?" class="btn_precisaAjuda">
+                    <i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;Fale com um advogado agora!
+                </a>
+                <!--Fim do botão de ajuda percorrendo a página-->
+                <a class="navbar-brand" href="#">
+                    <figure>
+                        <img src="/logotipo/logotipoNavBar.png" class="logoNavBar" alt="logotipo Ataide Advocacia">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link colornav" aria-current="page" href="#">Home
+                                &nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link colornav" href="#quemSomos">
+                                Quem Somos
+                                &nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle colornav" href="index.html#area" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" onclick="redirecionarParaIndex()">
+                                Área de Atuação
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="areas-de-atuacao/civil.html">Trabalhista pro
+                                        Trabalhador</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="areas-de-atuacao/consumidor.html">Trabalhista
+                                        Empresarial</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="areas-de-atuacao/criminal.html">Acidente e Doença do
+                                        Trabalho</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="areas-de-atuacao/familia.html">Previdenciário</a>
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="areas-de-atuacao/previdenciario.html">Inventário
+                                        Judicial e Extrajudicial</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="areas-de-atuacao/trabalhista.html">Direito
+                                        Condominial</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="areas-de-atuacao/trabalhista.html">Direito dos
+                                        Animais</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link colornav" href="#advogadaTitular">
+                                Advogada Titular
+                                &nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link colornav" href="#virtual">
+                                Consulta Virtual
+                                &nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link colornav" href="#presencial">
+                                Consulta Presencial
+                                &nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item colornav">
+                            <a class="nav-link colornav" href="#contato">
+                                Contato
+                                &nbsp;
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Inicio da Navbar (elemento bootstrap)-->
+
+        <!-- Inicio do Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active"></li>
+            </ol>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 transparence" src="./fundo/banner1.png" alt="First slide" height="8%">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 transparence" src="./fundo/banner2.png" alt="Second slide"
+                            height="8%">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 transparence" src="./fundo/banner3.png" alt="Third slide" height="8%">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+            <!-- Fim do Carousel -->
+    </header>
+    <!--fim do cabeçalho-->
+
+    <!--conteúdo principal do site-->
+    <main>
+
+        <!--Inicio da seção quem somos-->
+        <section class="sections container" id="quemSomos">
+            <h2 class="sections__titulo">Quem somos</h2>
+            <div class="row">
+                <div class="col-md-6 ms-auto">
+                    <p>Temos 9 anos de experiência em soluções jurídicas na advocacia Trabalhista e Previdenciária, além
+                        de
+                        outras
+                        áreas de atuação, como Inventários Judicial e Extrajudicial, Direito Condominial e Direito dos
+                        Animais, onde
+                        contamos com a expertise de Advogados e Colaboradores experientes.
+                        Nosso escritório tem sede no berço da Amazônia, em Belém-PA, portanto, além do atendimento 100%
+                        digital,
+                        também atendemos presencialmente em três endereços na região metropolitana.
+                        Nosso escritório proporciona atendimento 100% digital, pois somos especialista no uso de
+                        ferramentas
+                        tecnológicas jurídicas e atuamos em todo Brasil.
+                    </p>
+                </div>
+                <div class="col-md-6 ms-auto">
+                    <figure>
+                        <img src="https://via.placeholder.com/200x200" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            </div>
+
+        </section>
+        <!--Fim da seção quem somos-->
+
+        <!--Inicio da seção Advogada Titular-->
+        <section class="sections container" id="advogadaTitular">
+            <h2 class="sections__titulo">Advogada Titular</h2>
+            <div class="row">
+                <div class="col-md-6 ms-auto">
+                    <figure>
+                        <img src="https://via.placeholder.com/200x200" alt="">
+                    </figure>
+                </div>
+                <div class="col-md-6 ms-auto">
+                    <p>Karla Ataide é a Advogada Titular do Escritório, sendo
+                        responsável pela gestão administrativa, gestão de processos
+                        e todas as ferramentas tecnológicas aplicadas. Tem 9 anos
+                        de experiência na advocacia, se tornando Especialistas em
+                        Direito Trabalhista, Acidente de Trabalho e Doença
+                        Ocupacional, Direito Previdenciário e Direito Animal.
+                        Formada pela Universidade da Amazônia – UNAMA, abraçou
+                        a Advocacia em função da sua vasta experiência no ativismo
+                        PELOS Direitos Animais e do Meio Ambiente, que remonta
+                        desde o inicio de sua jornada acadêmica m 2007.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!--Fim da seção Advogada Titular-->
+
+
+        <!--Inicio da seção áreas de atuação-->
+        <section class="sections container" id="area">
+            <h3 class="sections_titulo">Áreas de atuação</h3>
+            <div>
+                <!--Ínicio da primeira linha da área de atuação-->
+                <div class="row sections_areaAtuacao">
+                    <!--Trabalhista pro Trabalhador-->
+                    <div class="col-md-4 ms-auto areaAtuacao">
+                        <a href="areas-de-atuacao/civil.html">
+                            <i class="fa-solid fa-handshake fa-2xl content-icon"></i>
+                            <br>
+                            Trabalhista pro Trabalhador
+                        </a>
+                    </div>
+
+                    <!--Trabalhista Empresarial-->
+                    <div class="col-md-4 ms-auto areaAtuacao">
+                        <a href="areas-de-atuacao/consumidor.html">
+                            <i class="fa-solid fa-file-invoice fa-2xl content-icon"></i>
+                            <br>
+                            Trabalhista Empresarial
+                        </a>
+                    </div>
+
+                    <!--Acidente e Doença do Trabalho-->
+                    <div class="col-md-4 ms-auto areaAtuacao">
+                        <a href="areas-de-atuacao/criminal.html">
+                            <i class="fa-solid fa-person-falling-burst fa-2xl content-icon"></i>
+                            <br>
+                            Acidente e Doença do Trabalho
+                        </a>
+                    </div>
+
+                </div>
+                <!--Fim da primeira linha da área de atuação-->
+
+
+                <!--Ínicio da segunda linha da área de atuação-->
+                <div class="row lineAreaAtuacao">
+                    <!--Previdenciário-->
+                    <div class="col-md-3 ms-auto areaAtuacao">
+                        <a href="areas-de-atuacao/familia.html">
+                            <i class="fa-solid fa-sack-dollar fa-2xl content-icon"></i>
+                            <br>
+                            Previdenciário
+                        </a>
+                    </div>
+
+                    <!--Inventário Judicial e Extrajudicial-->
+                    <div class="col-md-3 ms-auto areaAtuacao">
+                        <a href="areas-de-atuacao/previdenciario.html">
+                            <i class="fa-solid fa-balance-scale fa-2xl content-icon"></i>
+                            <br>
+                            Inventário Judicial e Extrajudicial
+                        </a>
+                    </div>
+
+                    <!--Direito Condominial-->
+                    <div class="col-md-3 ms-auto areaAtuacao">
+                        <a href="areas-de-atuacao/trabalhista.html">
+                            <i class="fa-solid fa-building-user fa-2xl content-icon"></i>
+                            <br>
+                            Direito Condominial
+                        </a>
+                    </div>
+
+                    <!--Direito dos Animais-->
+                    <div class="col-md-3 ms-auto areaAtuacao">
+                        <a href="areas-de-atuacao/trabalhista.html">
+                            <i class="fa-solid fa-shield-dog fa-2xl content-icon"></i>
+                            <br>
+                            Direito dos Animais
+                        </a>
+                    </div>
+
+                </div>
+                <!--Fim da segunda linha da área de atuação-->
+            </div>
+        </section>
+        <!--Fim da seção áreas de atuação-->
+
+        <!-- Inicio da seção Consulta Virtual -->
+        <section class="sections container" id="area">
+            <h3 class="sections_titulo">Consulta Virtual</h3>
+            <div>
+                <div class="row">
+                    <div class="col-md-6 ms-auto">
+                        <p>Nosso atendimento virtual facilita a vida corrida e agiliza a
+                            sua busca por Justiça e Defesa. Voce não precisa
+                            comparecer presencialmente em nosso escritório para
+                            receber atendimento jurídico de qualidade, pois contamos
+                            com uma série de soluções tecnológicas que facilitam seu
+                            acesso ao nosso escritório e à justiça. Você pode contar com um pré atendimento digital ou
+                            simplesmente
+                            semi digital. Entretanto, as audiências ocorrerão presencialmente.
+                        </p>
+                    </div>
+                    <div class="col-md-6 ms-auto">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 ms-auto">
+                                <h5><i class="fa-solid fa-check fa-2xl content-icon"></i>
+                                    AGENDAMENTO DE CONSULTAS PELO WHATSAPPS</h5>
+                                <p>Apresentamos nossa agenda e você escolhe o melhor horário para você</p>
+                            </div>
+                            <div class="col-md-6 ms-auto">
+                                <h5><i class="fa-solid fa-check fa-2xl content-icon"></i>
+                                    CONSULTA, ENTREVISTA E ANÁLISE DE DOCUMNTOS EM TEMPO REAL</h5>
+                                <p>Você é atendido(a) como se estivesse
+                                    na frente do seu Advogado, através de
+                                    videochamada</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 ms-auto">
+                                <h5><i class="fa-solid fa-check fa-2xl content-icon"></i>
+                                    ASSINATURA DIGITAL DE
+                                    DOCUMENTOS COM UM
+                                    CLICK</h5>
+                                <p>Através do Portal de
+                                    Assinaturas da OAB, você
+                                    assina com um click no
+                                    seu e-mail </p>
+                            </div>
+                            <div class="col-md-6 ms-auto">
+                                <h5><i class="fa-solid fa-check fa-2xl content-icon"></i>
+                                    PROCESSO 100% DIGITAL</h5>
+                                <p>Através do processo digital e
+                                    ferramentas tecnológicas de
+                                    coleta de provas, as audiências
+                                    e diligências processuais podem
+                                    ser 100% virtuais
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fim da seção Consulta Virtual -->
+
+        <!-- Inicio da seção Consulta Presencial -->
+        <section class="sections container" id="area">
+            <h3 class="sections_titulo">Consulta Virtual</h3>
+            <div class="row justify-content-around">
+                <div class="col-md-6 ms-auto">
+                    <h5>COMO FUNCIONA NOSSO ATENDIMENTO PRESENCIAL?</h5>
+                    <p>O atendimento presencial ocorre na região
+                        metropolitana de Belém-PA nos três endereços
+                        abaixo. Mas antes é preciso agendar a consulta pelo
+                        telefone ou whatsapp, onde saberá o tipo de
+                        consulta prestada e receberá instruções para sua
+                        consulta:</p>
+                    <br>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;Ed Sintesi Plaza, Sala 12, térreo, ATEP, localizada
+                        na av
+                        Senador Lemos nº 791, Bairro Umarizal, Belém-PA.
+                    </p>
+                    <br>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;Criart Coworking: Travessa Mariz e Barros 3334,
+                        entre Av
+                        João Paulo e Passagem São Pedro, Bairro Marco, Belém-PA
+                    </p>
+                    <br>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;Meet Up Office – Coworking Rodovia BR 316, 893
+                        Edifício Living Next Office, Ananindeua – PA.
+                    </p>
+                    <br>
+                </div>
+                <div class="col-md-6 ms-auto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15749.209225604844!2d-37.26636!3d-9.306459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70621f9df610561%3A0x24b46d9e21cd0e98!2sAta%C3%ADde%20advocacia!5e0!3m2!1spt-BR!2sbr!4v1712289331721!5m2!1spt-BR!2sbr"
+                        width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Fim da seção Consulta Presencial -->
+
+    </main>
+    <!-- fim conteúdo principal do site-->
+
+
+
+    <!--Inicio do rodapé com as informações de contato e localização-->
+    <footer>
+        <section id="contato" class="rodape">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col-md-4">
+                        <h3 class="informationFooter-rodape">Nosso telefone</h3>
+
+                        <h4 class="telefones rodape">(91)&nbsp;98944-5005</h4>
+                        <!-- <h4 class="telefones rodape">(13)&nbsp;99111-1285</h4> -->
+
+                        <a class="mail"
+                            href="mailto:karlaataideadvocacia@gmail.com?subject=Gostaria de tirar dúvidas">karlaataideadvocacia@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="informationFooter-rodape">Nos siga nas redes sociais</h3>
+
+                        <a class="telefones logos1 rodape" target="_blank" href="https://wa.me/5591989445005">
+                            <i class="fa-brands fa-whatsapp fa-xl"></i>
+                        </a>
+                        &nbsp;
+                        <a class="telefones logos2 rodape" href="https://www.linkedin.com/in/karla-ataide-247965220"><i
+                                class="fa-brands fa-linkedin fa-xl"></i>
+                        </a>
+                        &nbsp;
+                        <a target="_blank" class="telefones logos3 rodape"
+                            href="https://www.facebook.com/karla.ataide.7"><i class="fa-brands fa-facebook fa-xl"></i>
+                        </a>
+                        &nbsp;
+                        <a target="_blank" class="telefones logos4 rodape"
+                            href="https://www.instagram.com/adv.karlaataide/">
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                        </a>
+                        <br><br>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="informationFooter-rodape">
+                            Atendimentos &nbsp;
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </h3>
+
+                        <h4 class="telefones "><i class="fa-solid fa-building"></i>&nbsp;&nbsp;Presencial</h4>
+
+                        <h4 class="telefones "><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Virtual</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="https://wa.me/5591989445005?text=Olá, tudo bem?" class="btn_whats" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <div id="footer_copyright">
+            Copyright
+            &#169;
+            2024 Ataide Advocacia | Powered by <a target="_blank" href="https://firstcode.maestrus.com/home/">First
+                Code</a>
+        </div>
+    </footer>
+    <!--FIM do rodapé com as informações de contato e localização-->
+
+    <!--vinculo com JS-->
+    <script src="main.js"></script>
+    <!--Fim vinculo com JS-->
+</body>
+
+</html>
