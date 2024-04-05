@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --preto: #1E1E1E;
+    --vermelho: #BA0403;
+    --vinho: #940000;
+    --vinhoEscuro: #710012;
+    --azulMarinho: #1d1A55;
+    --cinza: #797979;
+    --branco: #EBEBEB;
+    --rosaClaro: #ffd0d0;
+    --titulo: "Bellefair", serif;
+    --texto: "Tajawal", sans-serif;
+}
+
+
+/*Estutura do site*/
+/*cor da página*/
+body {
+    background-color: var(--branco);
+}
+
+p {
+    font-family: var(--texto);
+    hyphens: auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+}
+
+/*Padding entre as seções*/
+.sections {
+    padding-top: 10%;
+    margin-bottom: 5%;
+}
+
+/*titulos do site*/
+.sections__titulo {
+    font-family: var(--titulo);
+    color: var(--azulMarinho);
+    font-size: 3.5em;
+    margin-bottom: 1.5%;
+    text-align: center;
+}
+
+
+
+/* Fim estutura do site*/
+
+
+/*Início navbar*/
+
+.colornav {
+    background-color: var(--vinhoEscuro);
+}
+
+/*Navbar para mudar a cor ao passar o mouse*/
+.dropdown-menu a.dropdown-item:hover {
+    background-color: var(--rosaClaro);
+}
+
+.logoNavBar {
+    width: 200px;
+}
+
+.colornav {
+    color: var(--branco);
+}
+
+.btn_precisaAjuda {
+    position: fixed;
+    width: 200px;
+    padding: 10px;
+    top: 20px;
+    right: 40px;
+    background-color: var(--azulMarinho);
+    color: var(--branco);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+/*Fim navbar*/
+
+
+
+/*Início do quem somos*/
+
+.sections__titulo_advogada {
+    font-family: var(--titulo);
+    color: var(--vinhoEscuro);
+    font-size: 3.5em;
+    margin-bottom: 1.5%;
+    text-align: center;
+}
+
+/*Fim do quem somos*/
+
+
+/*Início áreas de atuação*/
+/*cores dos ícones da área de atuação*/
+.areaAtuacao__icones {
+    color: var(--azulMarinho);
+    margin: 10%;
+}
+
+.sections__areaAtuacao__icones a {
+    text-decoration: none;
+    font-family: var(--texto);
+    font-weight: 500;
+    color: var(--azulMarinho);
+    font-size: x-large;
+}
+
+.sections_areaAtuacao {
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+/*Fim áreas de atuação*/
+
+/* Inicio da área Consulta Virtual */
+
+.virtual__titulo {
+    font-family: var(--texto);
+    font-size: 1.4rem;
+    color: var(--azulMarinho);
+    font-weight: 800;
+}
+
+.virtual__texto {
+    font-family: var(--texto);
+    font-size: 1.2rem;
+}
+
+.virtual__icone {
+    margin: 5%;
+    margin-bottom: 7%;
+}
+
+.presencial_icones {
+    color: var(--azulMarinho);
+}
+
+b {
+    color: var(--azulMarinho);
+}
+
+/*Início do rodapé*/
+/*Para deixar fixado em baixo o rodapé*/
+.rodape {
+    bottom: 0;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    line-height: 250%;
+    background-color: var(--vinhoEscuro);
+
+}
+
+/*Estilo do rodapé*/
+.rodape__titulo {
+    font-size: 190%;
+    color: var(--rosaClaro);
+    font-family: var(--texto);
+}
+
+
+.rodape__dados {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.rodape__dados:hover {
+    color: var(--rosaClaro);
+    text-decoration: none;
+    font-size: 155%;
+}
+
+.rodape__redes {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.logos1,
+.logos2,
+.logos3,
+.logos4 {
+    font-size: 210%;
+}
+
+.logos1:hover,
+.logos2:hover,
+.logos3:hover,
+.logos4:hover {
+    font-size: 180%;
+    color: var(--rosaClaro);
+}
+
+.rodape__whats__flutuante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.rodape__copyright {
+    text-align: center;
+}
+
+.rodape__copyright a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+/*FIM do rodapé*/
+
+@media screen and (max-width: 768px) {
+    .sections__imagens {
+        max-width: 600px;
+    }
+
+    .btn_precisaAjuda {
+        display: none;
+    }
+
+    #carousel__header {
+        margin-top: 20%;
+    }
+
+    .colornav {
+        background-color: var(--vinhoEscuro);
+    }
+
+}
+
+@media (max-width: 1400px) {
+    .btn_precisaAjuda {
+        display: none;
+    }
+}
