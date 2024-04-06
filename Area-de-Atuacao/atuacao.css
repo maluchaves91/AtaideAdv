@@ -33,18 +33,18 @@ body {
     background-color: var(--branco);
 }
 
-p {
+ul li {
     font-family: var(--texto);
     hyphens: auto;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.5;
 
 }
 
 /*Padding entre as seções*/
 .sections {
-    padding-top: 8%;
-    margin-bottom: 5%;
+    padding-top: 1%;
+    margin-bottom: 1%;
 }
 
 
@@ -88,19 +88,27 @@ p {
 .sections__titulo__advogado {
     font-family: var(--titulo);
     color: var(--azulMarinho);
-    font-size: 3.0em;
+    font-size: 3.0rem;
     margin-bottom: 1.5%;
 }
 
 .sections__titulo__enfase {
     font-family: var(--titulo);
     color: var(--vinhoEscuro);
-    font-size: 2.0em;
+    font-size: 2.0rem;
+    margin-bottom: 1.5%;
+}
+
+.sections__titulo__especialidades {
+    font-family: var(--titulo);
+    color: var(--azulMarinho);
+    font-size: 2.0rem;
     margin-bottom: 1.5%;
 }
 
 .homepage {
     text-align: center;
+    padding: 8%;
 }
 
 /*Fim do quem somos*/
@@ -129,32 +137,7 @@ p {
 
 /*Fim áreas de atuação*/
 
-/* Inicio da área Consulta Virtual */
 
-.virtual__titulo {
-    font-family: var(--texto);
-    font-size: 1.4rem;
-    color: var(--azulMarinho);
-    font-weight: 800;
-}
-
-.virtual__texto {
-    font-family: var(--texto);
-    font-size: 1.2rem;
-}
-
-.virtual__icone {
-    margin: 5%;
-    margin-bottom: 7%;
-}
-
-.presencial_icones {
-    color: var(--azulMarinho);
-}
-
-b {
-    color: var(--azulMarinho);
-}
 
 /*Início do rodapé*/
 /*Para deixar fixado em baixo o rodapé*/
@@ -164,6 +147,7 @@ b {
     padding-bottom: 4%;
     line-height: 250%;
     background-color: var(--vinhoEscuro);
+    margin-top: 3%;
 
 }
 
@@ -214,11 +198,10 @@ b {
     bottom: 40px;
     right: 40px;
     background-color: #25d366;
-    color: #FFF;
+    color: var(--branco);
     border-radius: 50px;
     text-align: center;
-    font-size: 30px;
-    box-shadow: 1px 1px 2px #888;
+    font-size: 38px;
     z-index: 1000;
 }
 
@@ -238,14 +221,41 @@ b {
         max-width: 600px;
     }
 
-    #carousel__header {
-        margin-top: 20%;
+
+    .homepage {
+        padding-top: 35%;
     }
 
-    .colornav {
-        background-color: var(--vinhoEscuro);
+    .sections__titulo__advogado {
+        font-size: 2rem;
+    }
+
+    .sections__titulo__enfase {
+        font-size: 1.5rem;
+    }
+
+    .sections__titulo__especialidades {
+        font-size: 1.5rem;
     }
 
 }
 
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+    .homepage {
+        padding-top: 20%;
+    }
+}
+
+
+@media (max-width: 505px) {
+    .homepage {
+        padding-top: 35%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .mail {
+        margin-top: 15%;
+        font-size: 1.0rem;
+    }
+}

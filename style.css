@@ -221,11 +221,10 @@ b {
     bottom: 40px;
     right: 40px;
     background-color: #25d366;
-    color: #FFF;
+    color: var(--branco);
     border-radius: 50px;
     text-align: center;
-    font-size: 30px;
-    box-shadow: 1px 1px 2px #888;
+    font-size: 38px;
     z-index: 1000;
 }
 
@@ -262,5 +261,12 @@ b {
 @media (max-width: 1400px) {
     .btn_precisaAjuda {
         display: none;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .mail {
+        margin-top: 15%;
+        font-size: 1.0rem;
     }
 }
