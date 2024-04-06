@@ -73,7 +73,7 @@ p {
 }
 
 .logoNavBar {
-    width: 200px;
+    width: 170px;
 }
 
 .colornav {
@@ -90,10 +90,15 @@ p {
     color: var(--branco);
     border-radius: 30px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     z-index: 1000;
     text-decoration: none;
     line-height: 1.5;
+}
+
+.container__brand {
+    margin-right: 50px;
+    margin-left: 80px;
 }
 
 /*Fim navbar*/
@@ -235,6 +240,10 @@ b {
 .rodape__copyright a {
     text-decoration: none;
     color: var(--preto);
+}
+
+.atendimentos {
+    margin-left: 35%;
 }
 
 /*FIM do rodapé*/

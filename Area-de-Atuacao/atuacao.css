@@ -224,6 +224,10 @@ ul li {
     color: var(--preto);
 }
 
+.atendimentos {
+    margin-left: 35%;
+}
+
 /*FIM do rodapé*/
 
 @media screen and (max-width: 768px) {
