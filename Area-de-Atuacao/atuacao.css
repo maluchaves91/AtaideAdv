@@ -47,7 +47,10 @@ ul li {
     margin-bottom: 1%;
 }
 
-
+.container__brand {
+    margin-right: 50px;
+    margin-left: 80px;
+}
 
 
 /* Fim estutura do site*/
@@ -66,7 +69,7 @@ ul li {
 }
 
 .logoNavBar {
-    width: 200px;
+    width: 170px;
 }
 
 .faleadvogado {
@@ -109,6 +112,13 @@ ul li {
 .homepage {
     text-align: center;
     padding: 8%;
+}
+
+.img-fluid {
+    border-style: ridge;
+    border-radius: 30px;
+    border-color: var(--azulMarinho);
+    margin-bottom: 15px;
 }
 
 /*Fim do quem somos*/

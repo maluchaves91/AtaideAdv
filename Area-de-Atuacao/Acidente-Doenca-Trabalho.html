@@ -89,98 +89,93 @@
     <header>
         <!--Inicio da Navbar (elemento bootstrap)-->
         <nav class="navbar navbar-expand-lg fixed-top colornav">
-            <div class="container">
-                <!--Botão precisa de ajuda percorrendo a página-->
+            <a class="navbar-brand container__brand" href="#">
+                <figure>
+                    <img src="/logotipo/Secundario/Branco.png" class="logoNavBar" alt="logotipo Ataide Advocacia">
+                </figure>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link colornav" aria-current="page" href="../index.html#">Home
+                            &nbsp;
+                        </a>
+                    </li>
 
-                <!--Fim do botão de ajuda percorrendo a página-->
-                <a class="navbar-brand" href="#">
-                    <figure>
-                        <img src="/logotipo/Secundario/Branco.png" class="logoNavBar" alt="logotipo Ataide Advocacia">
-                    </figure>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link colornav" aria-current="page" href="../index.html#">Home
-                                &nbsp;
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link colornav" href="../index.html#quemSomos">
+                            Quem Somos
+                            &nbsp;
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link colornav" href="../index.html#quemSomos">
-                                Quem Somos
-                                &nbsp;
-                            </a>
-                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle colornav" href="index.html#area" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" onclick="redirecionarParaIndex()">
+                            Área de Atuação
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../Area-de-Atuacao/Trabalhista-pro-Trabalhador.html">
+                                    Trabalhista pro Trabalhador</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="../Area-de-Atuacao/Trabalhista-Empresarial.html">
+                                    Trabalhista Empresarial</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="../Area-de-Atuacao/Acidente-Doenca-Trabalho.html">
+                                    Acidente e Doença do Trabalho </a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item"
+                                    href="../Area-de-Atuacao/Previdenciario.html">Previdenciário</a>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item"
+                                    href="../Area-de-Atuacao/Inventario-Judicial-Extrajudicial.html">Inventário
+                                    Judicial e Extrajudicial</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="../Area-de-Atuacao/Direito-Condominial.html">Direito
+                                    Condominial</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="../Area-de-Atuacao/Direito-dos-Animais.html">Direito
+                                    dos
+                                    Animais</a></li>
+                        </ul>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle colornav" href="index.html#area" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" onclick="redirecionarParaIndex()">
-                                Área de Atuação
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../Area-de-Atuacao/Trabalhista-pro-Trabalhador.html">
-                                        Trabalhista pro Trabalhador</a></li>
-                                <hr class="dropdown-divider">
-                                <li><a class="dropdown-item" href="../Area-de-Atuacao/Trabalhista-Empresarial.html">
-                                        Trabalhista Empresarial</a></li>
-                                <hr class="dropdown-divider">
-                                <li><a class="dropdown-item" href="../Area-de-Atuacao/Acidente-Doenca-Trabalho.html">
-                                        Acidente e Doença do Trabalho </a></li>
-                                <hr class="dropdown-divider">
-                                <li><a class="dropdown-item"
-                                        href="../Area-de-Atuacao/Previdenciario.html">Previdenciário</a>
-                                </li>
-                                <hr class="dropdown-divider">
-                                <li><a class="dropdown-item"
-                                        href="../Area-de-Atuacao/Inventario-Judicial-Extrajudicial.html">Inventário
-                                        Judicial e Extrajudicial</a></li>
-                                <hr class="dropdown-divider">
-                                <li><a class="dropdown-item" href="../Area-de-Atuacao/Direito-Condominial.html">Direito
-                                        Condominial</a></li>
-                                <hr class="dropdown-divider">
-                                <li><a class="dropdown-item" href="../Area-de-Atuacao/Direito-dos-Animais.html">Direito
-                                        dos
-                                        Animais</a></li>
-                            </ul>
+                    </li>
 
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link colornav" href="../index.html#advogadaTitular">
+                            Advogada Titular
+                            &nbsp;
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link colornav" href="../index.html#advogadaTitular">
-                                Advogada Titular
-                                &nbsp;
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link colornav" href="../index.html#virtual">
+                            Consulta Virtual
+                            &nbsp;
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link colornav" href="../index.html#virtual">
-                                Consulta Virtual
-                                &nbsp;
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link colornav" href="../index.html#presencial">
+                            Consulta Presencial
+                            &nbsp;
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link colornav" href="../index.html#presencial">
-                                Consulta Presencial
-                                &nbsp;
-                            </a>
-                        </li>
-
-                        <li class="nav-item colornav">
-                            <a class="nav-link colornav" href="../index.html#contato">
-                                Contato
-                                &nbsp;
-                            </a>
-                        </li>
+                    <li class="nav-item colornav">
+                        <a class="nav-link colornav" href="#contato">
+                            Contato
+                            &nbsp;
+                        </a>
+                    </li>
 
 
-                    </ul>
-                </div>
+                </ul>
             </div>
         </nav>
         <!--Inicio da Navbar (elemento bootstrap)-->
