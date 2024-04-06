@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<!--setor que não é visível ao usuário-->
+
+<head>
+    <!--Colocar os meta para vincular melhor no Google-->
+
+    <!--FIM - Colocar os meta para vincular melhor no Google-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ataide Advocacia</title>
+
+    <!--Para substituir o ícone do google para o logo da empresa-->
+    <link rel="icon" href="./logotipo/Icone/Branco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./logotipo/Icone/Branco.png" type="image/x-icon">
+    <!--Fim para substituir o ícone do google para o logo da empresa-->
+
+    <!--especifica a base URL para todos os links do site-->
+    <!-- <base href="https://www.ataideadv.com.br/"> -->
+
+    <!-- Descrição do que se trata o site-->
+    <meta name="description"
+        content="ATAIDE ADVOCACIA: soluções jurídicas inteligentes personalizadas e humanizadas! Atendemos nossos clientes de forma pessoal, obedecendo o Estatuto da OAB e o Contrato">
+
+    <!-- Lista das principais palavras-chave do site -->
+    <meta name="keywords"
+        content="advocacia, direito trabalhista, direito empresarial, direito previdenciário, inventário, direito condominial, direito dos animais, escritório de advocacia">
+
+    <!-- Autor do site -->
+    <meta name="author" content="First Code - https://firstcode.maestrus.com/home/">
+
+    <!-- Direitos autorais do criador -->
+    <meta name="copyrigth" content="© 2023 First Code">
+
+    <!-- Latitude e longitude do escritório -->
+    <meta name="geo.position" content="-9.306299802443071, -37.26638551946915">
+
+    <!-- Região da localização do escritório -->
+    <meta name="geo.placename" content="PA-BR">
+
+    <!-- Informações para redes sociais usares-->
+    <meta property="og:url" content="https://www.ataideadv.com.br/">
+
+    <!-- Para identificar o tipo de conteúdo do site -->
+    <meta property="og:type" content="website">
+
+    <!-- Exibir adequadamente o titulo do site em redes sociais -->
+    <meta name="og:title" content="Ataide Advocacia">
+
+    <!-- Informa a descrição da página para as redes sociais -->
+    <meta property="og:description"
+        content="ATAIDE ADVOCACIA: soluções jurídicas inteligentes personalizadas e humanizadas! Atendemos nossos clientes de forma pessoal, obedecendo o Estatuto da OAB e o Contrato">
+
+    <!-- Mostra a imagem do site em redes sociais -->
+    <meta name="og:image" content="COLOCAR AQUI">
+
+    <!-- Exibe o nome do site em redes sociais -->
+    <meta property="og:site_name" content="Ataide Advocacia">
+
+    <!-- Ajuda a informar ao navegador a página original do site -->
+    <link rel="canonical" href="https://www.ataideadv.com.br/">
+
+    <!--Link boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--FIM do link boostrap-->
+
+    <!--Vinculo com CSS-->
+    <link rel="stylesheet" href="../Area-de-Atuacao/atuacao.css">
+    <!--Fim do vinculo com CSS-->
+
+    <!--Fontawesome - Ícones-->
+    <script src="https://kit.fontawesome.com/3b7c1eabb4.js" crossorigin="anonymous"></script>
+    <!--Fim da fontawesome - Ícones-->
+
+</head>
+<!-- fim setor que não é visível ao usuário-->
+
+<body>
+    <!--link bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!--Fim do link bootstrap-->
+
+    <!--cabeçalho do site-->
+    <header>
+        <!--Inicio da Navbar (elemento bootstrap)-->
+        <nav class="navbar navbar-expand-lg fixed-top colornav">
+            <div class="container">
+                <!--Botão precisa de ajuda percorrendo a página-->
+
+                <!--Fim do botão de ajuda percorrendo a página-->
+                <a class="navbar-brand" href="#">
+                    <figure>
+                        <img src="/logotipo/Secundario/Branco.png" class="logoNavBar" alt="logotipo Ataide Advocacia">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link colornav" aria-current="page" href="../index.html#">Home
+                                &nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link colornav" href="../index.html#quemSomos">
+                                Quem Somos
+                                &nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle colornav" href="index.html#area" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" onclick="redirecionarParaIndex()">
+                                Área de Atuação
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../Area-de-Atuacao/Trabalhista-pro-Trabalhador.html">
+                                        Trabalhista pro Trabalhador</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="../Area-de-Atuacao/Trabalhista-Empresarial.html">
+                                        Trabalhista Empresarial</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="../Area-de-Atuacao/Acidente-Doenca-Trabalho.html">
+                                        Acidente e Doença do Trabalho </a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item"
+                                        href="../Area-de-Atuacao/Previdenciario.html">Previdenciário</a>
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item"
+                                        href="../Area-de-Atuacao/Inventario-Judicial-Extrajudicial.html">Inventário
+                                        Judicial e Extrajudicial</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="../Area-de-Atuacao/Direito-Condominial.html">Direito
+                                        Condominial</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="../Area-de-Atuacao/Direito-dos-Animais.html">Direito
+                                        dos
+                                        Animais</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link colornav" href="../index.html#advogadaTitular">
+                                Advogada Titular
+                                &nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link colornav" href="../index.html#virtual">
+                                Consulta Virtual
+                                &nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link colornav" href="../index.html#presencial">
+                                Consulta Presencial
+                                &nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item colornav">
+                            <a class="nav-link colornav" href="../index.html#contato">
+                                Contato
+                                &nbsp;
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Inicio da Navbar (elemento bootstrap)-->
+
+        <!-- Inicio do homepage -->
+        <div class="homepage">
+            <h1 class="sections__titulo__advogado">ADVOGADO(A) TRABALHISTA EMPRESARIAL</h1>
+            <h3 class="sections__titulo__enfase">Ênfase na Defesa Trabalhista de Empresas</h3>
+            <figure>
+                <img class="img-fluid" src="/Area-de-Atuacao/imagens/empresarial.png" alt="">
+            </figure>
+            <a target="_blank" href="https://wa.me/5591989445005?text=Olá, tudo bem?" class="faleadvogado">
+                Agende sua consulta
+            </a>
+
+        </div>
+        <!-- Fim do homepage -->
+    </header>
+    <!--fim do cabeçalho-->
+
+    <!--conteúdo principal do site-->
+    <main>
+        <!--Inicio da seção especialidades-->
+        <section class="container sections">
+            <h2 class="sections__titulo__especialidades"> ESSAS SÃO NOSSAS ESPECIALIDADES</h2>
+            <ul>
+                <li>
+                    Defesas estratégicas em Contestações, Reconvenções e Consignações de Ações trabalhista para empresa
+                    ou
+                    reclamada;
+                </li>
+                <li>
+                    Recursos e Execução;
+                </li>
+                <li>
+                    Acompanhamento de Rescisão do contrato de trabalho extrajudicial;
+                </li>
+                <li>
+                    Dissídios Coletivos (jurídico, econômico e de greve);
+                </li>
+                <li>
+                    Experiência e Defesa estratégicas em ações milionárias de acidente de trabalho e doenças do
+                    trabalho;
+                </li>
+                <li>
+                    Consultoria Trabalhista de acordo com as novas regras da Reforma Trabalhista
+                </li>
+                <li>
+                    Assessorial Extrajudicial para criação de normas internas, monitoramento, elaboração e revisão de
+                    contratos e
+                    analise de riscos de acordo com a legislação;
+                </li>
+                <li>
+                    Compliance palestras direcionadorasde equipe e treinamnto corporativo.
+                </li>
+            </ul>
+        </section>
+        <!--Fim da seção quem somos-->
+
+        <!--Inicio da seção COMO JUDAMOS TRABALHADORES-->
+        <section class="container sections">
+            <h2 class="sections__titulo__especialidades">COMO AJUDAMOS TRABALHADORES? </h2>
+            <ul>
+                <li>
+                    Atuação em todo território nacional
+                </li>
+                <li>
+                    Acessibilidade através do juízo 100% digital
+                </li>
+                <li>
+                    Atendimento personalidade com entrevista minuciosa do cliente;
+                </li>
+                <li>
+                    Redução de custos nos casos de condenações trabalhistas
+                </li>
+                <li>
+                    Apresentação de soluções tecnológicas para prevenção de contencioso trabalhista.
+                </li>
+            </ul>
+        </section>
+        <!--Fim da seção COMO JUDAMOS TRABALHADORES-->
+
+
+        <!--Inicio do rodapé com as informações de contato e localização-->
+        <footer>
+            <section id="contato" class="rodape">
+                <div class="container text-center">
+                    <div class="row align-items-start">
+                        <div class="col-md-4">
+                            <h3 class="rodape__titulo">Nosso telefone</h3>
+
+                            <h4 class="rodape__dados">(91)&nbsp;98944-5005</h4>
+
+                            <a class="rodape__dados mail"
+                                href="mailto:karlaataideadvocacia@gmail.com?subject=Gostaria de tirar dúvidas">karlaataideadvocacia@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h3 class="rodape__titulo">Nos siga nas redes sociais</h3>
+
+                            <a class="rodape__redes logos1" target="_blank" href="https://wa.me/5591989445005">
+                                <i class="fa-brands fa-whatsapp fa-xl"></i>
+                            </a>
+                            &nbsp;
+                            <a class="rodape__redes logos2" href="https://www.linkedin.com/in/karla-ataide-247965220"><i
+                                    class="fa-brands fa-linkedin fa-xl"></i>
+                            </a>
+                            &nbsp;
+                            <a target="_blank" class="rodape__redes logos3"
+                                href="https://www.facebook.com/karla.ataide.7"><i
+                                    class="fa-brands fa-facebook fa-xl"></i>
+                            </a>
+                            &nbsp;
+                            <a target="_blank" class="rodape__redes logos4"
+                                href="https://www.instagram.com/adv.karlaataide/">
+                                <i class="fa-brands fa-instagram fa-xl"></i>
+                            </a>
+                            <br><br>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h3 class="rodape__titulo">
+                                Atendimentos &nbsp;
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </h3>
+
+                            <h4 class="rodape__dados"><i class="fa-solid fa-building"></i>&nbsp;&nbsp;Presencial</h4>
+
+                            <h4 class="rodape__dados"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Virtual</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <a href="https://wa.me/5591989445005?text=Olá, tudo bem?" class="rodape__whats__flutuante" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <div class="rodape__copyright">
+                Copyright
+                &#169;
+                2024 Ataide Advocacia | Powered by <a target="_blank" href="https://firstcode.maestrus.com/home/">First
+                    Code</a>
+            </div>
+        </footer>
+        <!--FIM do rodapé com as informações de contato e localização-->
+
+
+</body>
+
+</html>
