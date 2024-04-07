@@ -18,7 +18,7 @@ body {
     --vermelho: #BA0403;
     --vinho: #940000;
     --vinhoEscuro: #710012;
-    --azulMarinho: #1d1A55;
+    --azulMarinho: #1D1A55;
     --cinza: #797979;
     --branco: #EBEBEB;
     --rosaClaro: #ffd0d0;
@@ -78,6 +78,7 @@ p {
 
 .colornav {
     color: var(--branco);
+    /* padding-top: 30px; */
 }
 
 .btn_precisaAjuda {
@@ -95,6 +96,30 @@ p {
     text-decoration: none;
     line-height: 1.5;
 }
+
+.header__icones a {
+    text-decoration: none;
+    color: #1D1A55;
+    font-size: large;
+    margin: 10px;
+}
+
+.icone1 {
+    padding-left: 5px;
+}
+
+.header__icones {
+    position: fixed;
+    padding: 7px;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    z-index: 1000;
+    background-color: var(--branco);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
 
 .container__brand {
     margin-right: 50px;
