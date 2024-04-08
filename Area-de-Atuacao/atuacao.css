@@ -234,6 +234,12 @@ ul li {
 /*FIM do rodapé*/
 
 @media screen and (max-width: 992px) {
+    .container__brand {
+        margin-right: 0px;
+        margin-left: 25px;
+    }
+
+
     .sections__imagens {
         max-width: 600px;
     }
