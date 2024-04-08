@@ -1,6 +1,6 @@
-// function redirecionarParaIndex() {
-//     window.location.href = "index.html#area";
-// }
+function redirecionarParaIndex() {
+    window.location.href = "index.html#area";
+}
 
 // var nav = document.querySelector('nav');
 

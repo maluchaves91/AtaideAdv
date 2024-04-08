@@ -100,14 +100,14 @@ ul li {
 .sections__titulo__enfase {
     font-family: var(--titulo);
     color: var(--vinhoEscuro);
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5%;
 }
 
 .sections__titulo__especialidades {
     font-family: var(--titulo);
     color: var(--azulMarinho);
-    font-size: 2.0rem;
+    font-size: 1.7rem;
     margin-bottom: 1.5%;
 }
 
@@ -121,10 +121,11 @@ ul li {
 }
 
 .sections__imagem {
-    border-style: ridge;
+    border-style: solid;
     border-radius: 30px;
     border-color: var(--azulMarinho);
     margin-bottom: 15px;
+    background-size: cover;
 }
 
 /*Fim do quem somos*/

@@ -37,7 +37,7 @@ body {
 p {
     font-family: var(--texto);
     hyphens: auto;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.5;
 
 }
@@ -46,6 +46,13 @@ p {
 .sections {
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+#quemSomos,
+#advogadaTitular,
+#area,
+#virtual,
+#presencial {
     max-height: 100%;
 }
 
@@ -214,6 +221,17 @@ p {
     color: var(--azulMarinho);
 }
 
+.sections__presencial {
+    background-color: var(--cinzaClaro);
+}
+
+#presencial .col-md-6 {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 b {
     color: var(--azulMarinho);
 }
@@ -224,11 +242,11 @@ b {
 
 }
 
-.col-md-6 {
+#virtual .col-md-6 {
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .sections__virtual {
@@ -308,12 +326,14 @@ b {
 }
 
 .rodape__copyright {
+    margin-top: 3%;
     text-align: center;
+    color: var(--branco);
 }
 
 .rodape__copyright a {
     text-decoration: none;
-    color: var(--preto);
+    color: var(--branco);
 }
 
 .atendimentos {
