@@ -22,6 +22,7 @@ body {
     --cinza: #797979;
     --branco: #EBEBEB;
     --rosaClaro: #ffd0d0;
+    --cinzaClaro: #e1e1e1;
     --titulo: "Bellefair", serif;
     --texto: "Tajawal", sans-serif;
 }
@@ -43,14 +44,23 @@ p {
 
 /*Padding entre as seções*/
 .sections {
-    padding-top: 10%;
-    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-height: 100%;
 }
 
 /*titulos do site*/
 .sections__titulo {
     font-family: var(--titulo);
     color: var(--azulMarinho);
+    font-size: 3.5em;
+    margin-bottom: 2.5%;
+    text-align: center;
+}
+
+.sections__titulo__escuro {
+    font-family: var(--titulo);
+    color: var(--branco);
     font-size: 3.5em;
     margin-bottom: 1.5%;
     text-align: center;
@@ -78,7 +88,12 @@ p {
 
 .colornav {
     color: var(--branco);
-    /* padding-top: 30px; */
+    background-color: var(--vinhoEscuro);
+}
+
+.colornav a {
+    font-size: 1.2rem;
+    font-family: var(--texto);
 }
 
 .btn_precisaAjuda {
@@ -109,7 +124,7 @@ p {
 }
 
 .header__icones {
-    position: fixed;
+    position: absolute;
     padding: 7px;
     top: 0px;
     right: 0px;
@@ -164,25 +179,35 @@ p {
     margin-top: 5%;
 }
 
+#area {
+    background-color: var(--cinzaClaro);
+}
+
 /*Fim áreas de atuação*/
 
 /* Inicio da área Consulta Virtual */
 
 .virtual__titulo {
     font-family: var(--texto);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--azulMarinho);
     font-weight: 800;
 }
 
 .virtual__texto {
     font-family: var(--texto);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.3;
 }
 
 .virtual__icone {
-    margin: 5%;
-    margin-bottom: 7%;
+    margin-right: 7%;
+    margin-bottom: 4%;
+}
+
+.virtual__icone__check {
+    display: flex;
+    align-items: center;
 }
 
 .presencial_icones {
@@ -191,6 +216,30 @@ p {
 
 b {
     color: var(--azulMarinho);
+}
+
+#virtual {
+    background-image: url("/fundo/balanca.png");
+    max-height: 100%;
+
+}
+
+.col-md-6 {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sections__virtual {
+    background-color: #e1e1e1;
+}
+
+.sections__virtual__paragrafo {
+    color: var(--branco);
+    background-color: var(--azulMarinho);
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 /*Início do rodapé*/
@@ -278,22 +327,30 @@ b {
         max-width: 600px;
     }
 
-    .btn_precisaAjuda {
+    /* .btn_precisaAjuda {
         display: none;
-    }
+    } */
 
-    #carousel__header {
+    /* #carousel__header {
         margin-top: 20%;
-    }
+    } */
 
     .colornav {
         background-color: var(--vinhoEscuro);
+    }
+
+    .header__icones {
+        display: none;
     }
 
 }
 
 @media (max-width: 1400px) {
     .btn_precisaAjuda {
+        display: none;
+    }
+
+    .header__icones {
         display: none;
     }
 }

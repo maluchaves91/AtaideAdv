@@ -113,12 +113,11 @@ ul li {
 
 .homepage {
     text-align: center;
-    margin-top: 5%;
-    padding-top: 4%;
-    padding-bottom: 8%;
+    padding-bottom: 4%;
+    padding-top: 3%;
     background-image: url("/Area-de-Atuacao/imagens/img_header.png");
     background-repeat: no-repeat;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 .sections__imagem {
@@ -155,7 +154,6 @@ ul li {
 .rodape {
     bottom: 0;
     padding-top: 3%;
-    padding-bottom: 4%;
     line-height: 250%;
     background-color: var(--vinhoEscuro);
     margin-top: 3%;
@@ -217,12 +215,14 @@ ul li {
 }
 
 .rodape__copyright {
+    margin-top: 3%;
     text-align: center;
+    color: var(--branco);
 }
 
 .rodape__copyright a {
     text-decoration: none;
-    color: var(--preto);
+    color: var(--branco);
 }
 
 .atendimentos {
