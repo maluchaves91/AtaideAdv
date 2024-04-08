@@ -237,7 +237,7 @@ b {
 }
 
 #virtual {
-    background-image: url("/fundo/balanca.png");
+    background-image: url("fundo/balanca.png");
     max-height: 100%;
 
 }
