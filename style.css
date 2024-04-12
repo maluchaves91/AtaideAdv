@@ -72,6 +72,9 @@ p {
     margin-bottom: 1.5%;
 }
 
+.underline {
+    color: var(--vinhoEscuro)
+}
 
 
 /* Fim estutura do site*/
