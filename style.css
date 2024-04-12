@@ -49,14 +49,6 @@ p {
     padding-bottom: 5%;
 }
 
-#quemSomos,
-#advogadaTitular,
-#area,
-#virtual,
-#presencial {
-    max-height: 100vh;
-}
-
 /*titulos do site*/
 .sections__titulo {
     font-family: var(--titulo);
@@ -350,12 +342,13 @@ b {
 
 @media screen and (max-width: 768px) {
 
-    main {
-        padding: 20px;
-        margin: 0;
-        box-sizing: border-box;
+    #quemSomos,
+    #advogadaTitular,
+    #area,
+    #virtual,
+    #presencial {
+        padding: 35px;
     }
-
 
     .sections__imagens {
         max-width: 600px;
