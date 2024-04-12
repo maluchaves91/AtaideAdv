@@ -394,6 +394,10 @@ b {
     }
 
 
+    .sections__areaAtuacao__icones a {
+        font-size: medium;
+    }
+
     /*Estilo do rodapé*/
     .rodape__titulo {
         font-size: 1.5em;
