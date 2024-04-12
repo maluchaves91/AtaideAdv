@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     padding: 0;
@@ -23,8 +24,8 @@ body {
     --branco: #EBEBEB;
     --rosaClaro: #ffd0d0;
     --cinzaClaro: #e1e1e1;
-    --titulo: "Bellefair", serif;
-    --texto: "Tajawal", sans-serif;
+    --titulo: "Open Sans", sans-serif;
+    --texto: "Open Sans", sans-serif;
 }
 
 
@@ -36,8 +37,8 @@ body {
 
 p {
     font-family: var(--texto);
-    hyphens: auto;
-    font-size: 1.4rem;
+    text-align: justify;
+    font-size: 1.1rem;
     line-height: 1.5;
 
 }
@@ -53,24 +54,22 @@ p {
 #area,
 #virtual,
 #presencial {
-    max-height: 100%;
+    max-height: 100vh;
 }
 
 /*titulos do site*/
 .sections__titulo {
     font-family: var(--titulo);
     color: var(--azulMarinho);
-    font-size: 3.5em;
+    font-size: 2.0em;
     margin-bottom: 2.5%;
-    text-align: center;
 }
 
 .sections__titulo__escuro {
     font-family: var(--titulo);
-    color: var(--branco);
-    font-size: 3.5em;
+    color: var(--azulMarinho);
+    font-size: 2.0em;
     margin-bottom: 1.5%;
-    text-align: center;
 }
 
 
@@ -122,8 +121,8 @@ p {
 .header__icones a {
     text-decoration: none;
     color: var(--azulMarinho);
-    font-size: large;
-    margin: 10px;
+    font-size: medium;
+    margin: 7px;
 }
 
 .icone1 {
@@ -157,9 +156,13 @@ p {
 .sections__titulo_advogada {
     font-family: var(--titulo);
     color: var(--vinhoEscuro);
-    font-size: 3.5em;
+    font-size: 2.5em;
     margin-bottom: 1.5%;
-    text-align: center;
+}
+
+.sections__quemSomos__img {
+    width: 500px;
+    margin-left: 100px;
 }
 
 /*Fim do quem somos*/
@@ -176,7 +179,7 @@ p {
     text-decoration: none;
     font-family: var(--texto);
     font-weight: 500;
-    color: var(--azulMarinho);
+    color: var(--vinhoEscuro);
     font-size: x-large;
 }
 
@@ -273,7 +276,7 @@ b {
 
 /*Estilo do rodapé*/
 .rodape__titulo {
-    font-size: 190%;
+    font-size: 2.0em;
     color: var(--rosaClaro);
     font-family: var(--texto);
 }
@@ -282,13 +285,13 @@ b {
 .rodape__dados {
     color: var(--branco);
     text-decoration: none;
-    font-size: 150%;
+    font-size: 1.5em;
 }
 
 .rodape__dados:hover {
     color: var(--rosaClaro);
     text-decoration: none;
-    font-size: 155%;
+    font-size: 1.7em;
 }
 
 .rodape__redes {
@@ -300,14 +303,14 @@ b {
 .logos2,
 .logos3,
 .logos4 {
-    font-size: 210%;
+    font-size: 1.5em;
 }
 
 .logos1:hover,
 .logos2:hover,
 .logos3:hover,
 .logos4:hover {
-    font-size: 180%;
+    font-size: 1.3em;
     color: var(--rosaClaro);
 }
 
@@ -344,6 +347,11 @@ b {
 
 @media screen and (max-width: 768px) {
 
+    main {
+        padding: 20px;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
 
     .sections__imagens {
@@ -355,14 +363,10 @@ b {
         margin-left: 25px;
     }
 
-
-    /* .btn_precisaAjuda {
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
         display: none;
-    } */
-
-    /* #carousel__header {
-        margin-top: 20%;
-    } */
+    }
 
     .colornav {
         background-color: var(--vinhoEscuro);
@@ -375,21 +379,85 @@ b {
     p {
         font-family: var(--texto);
         hyphens: auto;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         line-height: 1.5;
 
     }
 
     .sections__titulo,
     .sections__titulo__escuro {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 
     .sections__titulo_advogada {
-        font-size: 3em;
+        font-size: 1.5em;
+    }
+
+    .sections__quemSomos__img {
+        margin-left: 0;
     }
 
 
+    /*Estilo do rodapé*/
+    .rodape__titulo {
+        font-size: 1.5em;
+        color: var(--rosaClaro);
+        font-family: var(--texto);
+        margin-top: 20px;
+    }
+
+
+    .rodape__dados {
+        color: var(--branco);
+        text-decoration: none;
+        font-size: 1.0em;
+    }
+
+    .rodape__dados:hover {
+        color: var(--rosaClaro);
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+
+    .rodape__redes {
+        text-decoration: none;
+        color: var(--branco);
+    }
+
+    .logos1,
+    .logos2,
+    .logos3,
+    .logos4 {
+        font-size: 1.1em;
+    }
+
+    .logos1:hover,
+    .logos2:hover,
+    .logos3:hover,
+    .logos4:hover {
+        font-size: 1.3em;
+        color: var(--rosaClaro);
+    }
+
+    .rodape__whats__flutuante {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: var(--branco);
+        border-radius: 50px;
+        text-align: center;
+        font-size: 38px;
+        z-index: 1000;
+    }
+
+
+
+    .atendimentos {
+        margin-left: 35%;
+    }
 
 }
 
@@ -402,6 +470,10 @@ b {
         display: none;
     }
 
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: none;
+    }
 
 }
 
