@@ -347,7 +347,8 @@ b {
     #area,
     #virtual,
     #presencial {
-        padding: 35px;
+        padding-left: 35px;
+        padding-right: 35px;
     }
 
     .sections__imagens {
