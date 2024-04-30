@@ -35,10 +35,9 @@ body {
 
 ul li {
     font-family: var(--texto);
-    hyphens: auto;
     font-size: 1.3rem;
     line-height: 1.5;
-
+    text-align: justify;
 }
 
 /*Padding entre as seções*/
